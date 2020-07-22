@@ -6,15 +6,21 @@ const app = express();
 // Require 'path'
 const path = require('path');
 
+// Require handlebars
+const exphbs = require('express-handlebars');
+
 // Create route to index.html
 // app.get('/', (req, res) => {
 //     res.sendfile(path.join(__dirname, 'public', 'index.html'))
 // });
 
+// Create default template layout
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
+
+
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
-
-
 
 // To run the web server, create a variable called PORT that evaluates to a hosted port or a local port
 const PORT = process.env.PORT || 5000;
