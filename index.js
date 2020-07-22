@@ -1,26 +1,24 @@
-// Require 'express'
+// Require 'express'.
 const express = require('express');
 // Place express module in a variable called 'app'.
 const app = express();
-
-// Require 'path'
+// Require path for static file use.
 const path = require('path');
-
-// Require handlebars
+// Require handlebars.
 const exphbs = require('express-handlebars');
 
-// Create route to index.html
-// app.get('/', (req, res) => {
-//     res.sendfile(path.join(__dirname, 'public', 'index.html'))
-// });
+// Create public middleware so static files are accessible.
+app.use(express.static(path.join(__dirname, 'public/css')));
+app.use(express.static(path.join(__dirname, 'public/img/favicon')));
+app.use(express.static(path.join(__dirname, 'public/img/logo-gif')));
+app.use(express.static(path.join(__dirname, 'public/js/handlebars')));
 
-// Create default template layout
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+// Create default template layout called main and place in a folder called 'layouts' also inside 'views'.
+app.engine('handlebars', exphbs({ defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
-
-// Set static folder
-app.use(express.static(path.join(__dirname, 'public')));
+// Homepage route (may relocate to a routes directory)
+app.get('/', (req, res) => res.render('index'));
 
 // To run the web server, create a variable called PORT that evaluates to a hosted port or a local port
 const PORT = process.env.PORT || 5000;
