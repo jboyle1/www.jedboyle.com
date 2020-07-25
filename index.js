@@ -1,11 +1,15 @@
-// Require 'express'.
+// Require 'express' for templating.
 const express = require('express');
 // Place express module in a variable called 'app'.
 const app = express();
 // Require path for static file use.
 const path = require('path');
-// Require handlebars.
+// Require handlebars for data templating.
 const exphbs = require('express-handlebars');
+// Require 'fs' for PDF viewer.
+fs = require('fs')
+
+
 
 // Create public middleware so static files are accessible.
 app.use(express.static(path.join(__dirname, 'public/css')));
@@ -16,6 +20,7 @@ app.use(express.static(path.join(__dirname, 'public/img/chambers')));
 app.use(express.static(path.join(__dirname, 'public/js/handlebars')));
 app.use(express.static(path.join(__dirname, 'public/js/git-hub-info')));
 app.use(express.static(path.join(__dirname, 'public/js/email-js')));
+app.use(express.static(path.join(__dirname, 'public/js/pdfs')));
 
 
 // Create default template layout called main and place in a folder called
@@ -170,9 +175,21 @@ app.get('/resume', (req, res) => res.render('resume', context));
 app.get('/git-hub', (req, res) => res.render('git-hub', context));
 app.get('/contact', (req, res) => res.render('contact', context));
 
+
+// Route for PDF viewer
+app.get('/cv', function (req, res) {
+    var filePath = "/public/pdfs/jedboylecv2020.pdf";
+    fs.readFile(__dirname + filePath , function (err,data){
+        res.contentType("application/pdf");
+        res.send(data);
+    });
+});
+
 // To run the web server, create a variable called PORT that evaluates to a
 // hosted port or a local port
 const PORT = process.env.PORT || 5000;
 // run express 'listen' on 'app' on 'PORT' with a callback function second
 // parameter that console logs that the server is running on the specific port.
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+
+
