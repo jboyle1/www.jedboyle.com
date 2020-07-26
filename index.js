@@ -10,13 +10,42 @@ const exphbs = require('express-handlebars');
 fs = require('fs')
 
 
-
 // Create public middleware so static files are accessible.
 app.use(express.static(path.join(__dirname, 'public/css')));
 app.use(express.static(path.join(__dirname, 'public/img/favicon')));
 app.use(express.static(path.join(__dirname, 'public/img/logo-gif')));
 app.use(express.static(path.join(__dirname, 'public/img/resume')));
 app.use(express.static(path.join(__dirname, 'public/img/chambers')));
+app.use(express.static(path.join(__dirname, 'public/img/my-website-new')));
+app.use(express.static(path.join(__dirname, 'public/img/json-generator')));
+app.use(express.static(path.join(__dirname, 'public/img/musicon')));
+app.use(express.static(path.join(__dirname, 'public/img/rock-paper-scissors')));
+app.use(express.static(path.join(__dirname, 'public/img/php-calc')));
+app.use(express.static(path.join(__dirname, 'public/img/race-day')));
+app.use(express.static(path.join(__dirname, 'public/img/magic-eight-ball')));
+app.use(express.static(path.join(__dirname, 'public/img/games-of-chance')));
+app.use(express.static(path.join(__dirname, 'public/img/tasty-treats')));
+app.use(express.static(path.join(__dirname, 'public/img/react-exercise')));
+app.use(express.static(path.join(__dirname, 'public/img/bitesize')));
+app.use(express.static(path.join(__dirname, 'public/img/wordsmith')));
+app.use(express.static(path.join(__dirname, 'public/img/piano-keys')));
+app.use(express.static(path.join(__dirname, 'public/img/gameboard')));
+app.use(express.static(path.join(__dirname, 'public/img/web-safe-fonts')));
+app.use(express.static(path.join(__dirname, 'public/img/feedster')));
+app.use(express.static(path.join(__dirname, 'public/img/madison-square-market')));
+app.use(express.static(path.join(__dirname, 'public/img/j-summerfield-ceramics')));
+app.use(express.static(path.join(__dirname, 'public/img/p-boyle-photography')));
+app.use(express.static(path.join(__dirname, 'public/img/phoenix-beading')));
+app.use(express.static(path.join(__dirname, 'public/img/task-list')));
+app.use(express.static(path.join(__dirname, 'public/img/gender-in-academia')));
+app.use(express.static(path.join(__dirname, 'public/img/neighbourhood-for-change')));
+app.use(express.static(path.join(__dirname, 'public/img/connect-four')));
+app.use(express.static(path.join(__dirname, 'public/img/dont-restrict-yourself')));
+app.use(express.static(path.join(__dirname, 'public/img/my-website')));
+app.use(express.static(path.join(__dirname, 'public/img/tic-tac-toe')));
+app.use(express.static(path.join(__dirname, 'public/img/stopwatch')));
+app.use(express.static(path.join(__dirname, 'public/img/css-poster')));
+app.use(express.static(path.join(__dirname, 'public/img/j-summerfield-ceramics-old')));
 app.use(express.static(path.join(__dirname, 'public/js/handlebars')));
 app.use(express.static(path.join(__dirname, 'public/js/git-hub-info')));
 app.use(express.static(path.join(__dirname, 'public/js/email-js')));
@@ -27,6 +56,7 @@ app.use(express.static(path.join(__dirname, 'public/js/pdfs')));
 // 'layouts' also inside 'views'.
 app.engine('.hbs', exphbs({extname: 'hbs', defaultLayout: 'main'}));
 app.set('view engine', '.hbs');
+
 
 // Portfolio dropdown
 
@@ -165,6 +195,270 @@ const context = {
             link: 'Jackie.html',
             topic: 'Bootstrap'
         }
+    ], workHistory: [
+        {
+            dates: '01/2019 - 01/2020',
+            link: 'shorturl.at/LZ345',
+            image: 'ci.png',
+            alt: 'Code Institute, Full Stack Coding Bootcamp',
+            name: 'Code Institute',
+            inst: 'Edinburgh Napier Uni Diploma',
+            info: 'Full Stack Coding Bootcamp'
+        }, {
+            dates: '12/2019 - 01/2020',
+            link: 'https://www.udemy.com/',
+            image: 'udemy.png',
+            alt: 'Udemy, Full Stack Coding Bootcamp',
+            name: 'Udemy',
+            inst: 'Python and Django',
+            info: 'Full Stack Coding Bootcamp'
+        }, {
+            dates: '04/2018 - 05/2018',
+            link: 'https://www.elixel.co.uk/',
+            image: 'elixel.png',
+            alt: 'Udemy, UX/UI placement',
+            name: 'Elixel',
+            inst: 'App Developers',
+            info: 'UX/UI placement'
+        }, {
+            dates: '09/2016 - 09/2019',
+            link: 'shorturl.at/pMQW8',
+            image: 'plym.png',
+            alt: 'Udemy, Graphic Design Degree',
+            name: 'Plymouth College of Art',
+            inst: 'Graphic Design Degree',
+            info: 'Freelance web development'
+        }, {
+            dates: '11/2015 - 02/2016',
+            link: 'http://www.ptgltd.co.uk/',
+            image: 'fb_logo.jpg',
+            alt: 'PTG Engineering Ltd, Contractor',
+            name: 'PTG Engineering Ltd',
+            inst: 'CNC Machine Programmer',
+            info: 'Contractor'
+        }, {
+            dates: '2015 - 2016',
+            link: 'https://www.cityplym.ac.uk/courses/naval-architecture/',
+            image: 'plymc.jpeg',
+            alt: 'Naval Architecture',
+            name: 'Plymouth City College',
+            inst: 'Naval Architecture',
+            info: 'NVQ Level 4 Foundation (1 year)'
+        }, {
+            dates: '05/2015 - 09/2015',
+            link: 'https://www.uhvdesign.com/',
+            image: 'uhv.png',
+            alt: 'CNC Machine Programmer, Contractor',
+            name: 'UHV Design Ltd',
+            inst: 'CNC Machine Programmer',
+            info: 'Contractor'
+        }, {
+            dates: '09/2013 - 09/2014',
+            link: 'https://www.sundyne.com/products/hmd-kontro-pumps/',
+            image: 'hmd.png',
+            alt: 'CNC Machine Programmer, Contractor',
+            name: 'HMD Kontro Ltd',
+            inst: 'CNC Machine Programmer',
+            info: 'Contractor'
+        }, {
+            dates: '06/2004 - 05/2012',
+            link: 'http://www.hivac.co.uk/',
+            image: 'hivac-engineering.jpg',
+            alt: 'CNC Machine Programmer, Contractor',
+            name: 'Hivac Engineering Ltd',
+            inst: 'CNC Machine Programmer',
+            info: '& fitter/fabricator FT'
+        }, {
+            dates: '06/2004 - 05/2007',
+            link: 'http://www.sussexcoast.ac.uk/',
+            image: 'logo.png',
+            alt: 'Manufacturing Engineering, Merit',
+            name: 'Hastings College',
+            inst: 'BTEC National Cert Level 3',
+            info: 'Manufacturing Engineering, Merit'
+        },
+    ], portfolio: [
+        {
+            link: 'my-website-new.hbs',
+            image: '3my-website-new.png',
+            alt: 'www.jedboyle.com',
+            name: 'www.jedboyle.com',
+            languages: 'HTML, CSS, Node.js, Express, Handlebars'
+        }, {
+            link: 'json-generator.hbs',
+            image: '1json-generator.png',
+            alt: 'JSON Generator App with API',
+            name: 'JSON Generator App with API',
+            languages: 'HTML, CSS, JS, AJAX'
+        }, {
+            link: 'musicon.hbs',
+            image: 'musicon-001.png',
+            alt: 'musicon',
+            name: 'Musicon',
+            languages: 'HTML, CSS, JS, Handlebars'
+        }, {
+            link: 'rock-paper-scissors.hbs',
+            image: 'rps-001.png',
+            alt: 'rock paper scissors Game',
+            name: 'Rock Paper Scissors Game',
+            languages: 'HTML, CSS, JS'
+        }, {
+            link: 'php-calc.hbs',
+            image: '1php-calc.png',
+            alt: 'PHP Calculator App',
+            name: 'PHP Calculator App',
+            languages: 'HTML, CSS, PHP'
+        }, {
+            link: 'race-day.hbs',
+            image: '1race-day.png',
+            alt: 'race day registration day',
+            name: 'Race Day Registration Day',
+            languages: 'HTML, CSS, JS'
+        }, {
+            link: 'magic-eight-ball.hbs',
+            image: '1magic-eight-ball.png',
+            alt: 'Magic Eight Ball App',
+            name: 'Magic Eight Ball App',
+            languages: 'HTML, CSS, JS'
+        }, {
+            link: 'games-of-chance.hbs',
+            image: '1games-of-chance.png',
+            alt: 'Games of Chance App',
+            name: 'Games of Chance App',
+            languages: 'HTML, CSS, JS'
+        }, {
+            link: 'tasty-treats.hbs',
+            image: '1tasty-treats.jpg',
+            alt: 'Tasty Treats Form',
+            name: 'Tasty Treats Form',
+            languages: 'HTML, CSS, JS, Node.js'
+        }, {
+            link: 'react-exercise.hbs',
+            image: '1react-exercise.png',
+            alt: 'React Exercise',
+            name: 'React Exercise',
+            languages: 'HTML, CSS, JS, React.js'
+        }, {
+            link: 'bitesize.hbs',
+            image: '1bitesize.png',
+            alt: 'Bitesize App with API',
+            name: 'Bitesize App with API',
+            languages: 'HTML, CSS, JS, AJAX'
+        }, {
+            link: 'wordsmith.hbs',
+            image: '1wordsmith.png',
+            alt: 'Wordsmith App with API',
+            name: 'Wordsmith App with API',
+            languages: 'HTML, CSS, JS, AJAX'
+        }, {
+            link: 'piano-keys.hbs',
+            image: '1piano-keys.png',
+            alt: 'Piano Keys App',
+            name: 'Piano Keys App',
+            languages: 'HTML, CSS, JS'
+        }, {
+            link: 'gameboard.hbs',
+            image: '1gameboard.png',
+            alt: 'Gameboard App',
+            name: 'Gameboard App',
+            languages: 'HTML, CSS, JQuery'
+        }, {
+            link: 'web-safe-fonts.hbs',
+            image: '1web-safe-fonts.png',
+            alt: 'Web Safe Font Preview App',
+            name: 'Web Safe Font Preview App',
+            languages: 'HTML, CSS, JQuery'
+        }, {
+            link: 'feedster.hbs',
+            image: '1feedster.png',
+            alt: 'Feedster App',
+            name: 'Feedster App',
+            languages: 'HTML, CSS, JQuery'
+        }, {
+            link: 'madison-square-market.hbs',
+            image: '1madison.png',
+            alt: 'Madison Square Market App',
+            name: 'Madison Square Market App',
+            languages: 'HTML, CSS, JQuery'
+        }, {
+            link: 'phoenix-beading.hbs',
+            image: '1phoenix-beading.png',
+            alt: 'www.phoenixbeading.co.uk',
+            name: 'www.phoenixbeading.co.uk',
+            languages: 'HTML, CSS, JS, Bootstrap'
+        }, {
+            link: 'j-summerfield-ceramics.hbs',
+            image: '1j-summerfield-ceramics.png',
+            alt: 'www.jsummerfieldceramics.co.uk',
+            name: 'www.jsummerfieldceramics.co.uk',
+            languages: 'HTML, CSS, JS, Bootstrap'
+        }, {
+            link: 'p-boyle-photography.hbs',
+            image: '1p-boyle-photography.png',
+            alt: 'www.pboylephotography.com',
+            name: 'www.pboylephotography.com',
+            languages: 'HTML, CSS, JS, Bootstrap'
+        }, {
+            link: 'task-list.hbs',
+            image: '1task-list.png',
+            alt: 'www.task-list.com',
+            name: 'Task List App',
+            languages: 'HTML, CSS, Python, Flask'
+        }, {
+            link: 'gender-in-academia.hbs',
+            image: '1gender-in-academia.png',
+            alt: 'www.genderinacademia.co.uk',
+            name: 'www.genderinacademia.co.uk',
+            languages: 'HTML, CSS, DC.js, Crossfilter'
+        }, {
+            link: 'neighbourhood-for-change.hbs',
+            image: '1neighbourhood-for-change.jpg',
+            alt: 'www.neighbourhoodforchange.co.uk',
+            name: 'www.neighbourhoodforchange.co.uk',
+            languages: 'HTML, CSS, JS, Bootstrap'
+        }, {
+            link: 'connect-four.hbs',
+            image: '4connect-four.jpg',
+            alt: 'Connect Four Game',
+            name: 'Connect Four Game',
+            languages: 'HTML, CSS, JQuery'
+        }, {
+            link: 'dont-restrict-youreself.hbs',
+            image: '11dont-restrict-yourself.jpg',
+            alt: 'www.dontrestrictyourself.com',
+            name: 'www.dontrestrictyourself.com',
+            languages: 'HTML, CSS, JS, Bootstrap'
+        }, {
+            link: 'my-website.hbs',
+            image: '3my-website.png',
+            alt: 'www.jedboyle.com (old static site)',
+            name: 'www.jedboyle.com (old static site)',
+            languages: 'HTML, CSS, JS, Bootstrap'
+        }, {
+            link: 'tic-tac-toe.hbs',
+            image: '1tic-tac-toe.jpg',
+            alt: 'Tic Tac Toe Game',
+            name: 'Tic Tac Toe Game',
+            languages: 'HTML, CSS, JS'
+        }, {
+            link: 'stopwatch.hbs',
+            image: '1stopwatch.jpg',
+            alt: 'Stopwatch App',
+            name: 'Stopwatch App',
+            languages: 'HTML, CSS, JS, Bootstrap'
+        }, {
+            link: 'css-poster.hbs',
+            image: '2css-poster.jpg',
+            alt: 'CSS Poster',
+            name: 'CSS Poster',
+            languages: 'HTML, CSS'
+        }, {
+            link: 'j-summerfield-ceramics-old.hbs',
+            image: '13j-summerfield-ceramics-old.jpg',
+            alt: 'www.jsummerfieldceramics.co.uk (old static site)',
+            name: 'www.jsummerfieldceramics.co.uk (old static site)',
+            languages: 'HTML, CSS, JS, Bootstrap'
+        }
     ]
 };
 
@@ -172,9 +466,9 @@ const context = {
 
 app.get('/', (req, res) => res.render('index', context));
 app.get('/resume', (req, res) => res.render('resume', context));
+app.get('/portfolio', (req, res) => res.render('portfolio', context));
 app.get('/git-hub', (req, res) => res.render('git-hub', context));
 app.get('/contact', (req, res) => res.render('contact', context));
-
 
 // Route for PDF viewer
 app.get('/cv', function (req, res) {
@@ -184,6 +478,7 @@ app.get('/cv', function (req, res) {
         res.send(data);
     });
 });
+
 
 // To run the web server, create a variable called PORT that evaluates to a
 // hosted port or a local port

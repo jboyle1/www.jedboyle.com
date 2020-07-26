@@ -1,0 +1,28 @@
+<main>
+    <section class="container-fluid">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h3 class="contact-heading uppercase text-center">Browse My Portfolio</h3>
+            <br/>
+            <!-- Portfolio Gallery Grid -->
+            <div id="wrapper">
+                {{#each portfolio}}
+                    <div class="flex-item"> 
+                        <div class="column">
+                            <div class="content">
+                                <a href="{{link}}">
+                                    <img
+                                        src="{{this.image}}"
+                                        alt="{{this.alt}}"
+                                        style="width:100%"></a>
+                                        <br>
+                                        <br>
+                                        <p>{{this.name}}</p>
+                                        <p>{{this.languages}}<br>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+</main>
