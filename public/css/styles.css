@@ -38,10 +38,12 @@ html {
     background-color: #ffffff;
 }
 .bg-color-work-history {
-    background-color: #B3B3B3;
+    background: rgb(97,97,97);
+    background: linear-gradient(0deg, rgba(97,97,97,1) 0%, rgba(179,179,179,1) 100%);
 }
 .bg-color-personal-info {
-    background-color: #CCCCCC;
+    background: rgb(97,97,97);
+    background: linear-gradient(0deg, rgba(97,97,97,1) 0%, rgba(204,204,204,1) 100%);
 }
 .bg-color-contact {
     background-color: white;
@@ -282,21 +284,21 @@ header {
 .menuitem {
     height: 120px;
     text-align: center;
-    
+
 }
 .menuitem a {
     width: 100%;
     text-decoration: none;
     color: #ffffff;
     height: 120px;
-    
+
 }
 .menuitem a i {
     padding-top: 22px;
     display: block;
     color: #fafafa;
     font-size: 26px;
-    
+
 }
 .menuitem span {
     display: block;
@@ -695,7 +697,7 @@ button[type="submit"] {
     margin-top: 20px;
     margin-bottom: 30px;
     color: black;
-    font-size: 20px;
+    font-size: 28px;
 }
 .poject-description {
     margin: 0 40px;
@@ -843,66 +845,70 @@ button[type="submit"] {
     .white {
         color: white;
     }
-    /*------------------------------------------------------Portfolio new thumbnails*/
-    /* Create three equal columns that floats next to each other */
-    .column {
-        text-align: center;
-    }
-    /* Clear floats after rows */
-    /* Content */
-    .content {
-        background-color: white;
-        text-align: center;
-    }
-    /* The "show" class is added to the filtered elements */
-    .show {
-        display: block;
-    }
-    .page-image {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        margin-top: -334px;
-        margin-left: -500px;
-        transition: width 2s linear 1s;
 
-    }
-    .branding-001 {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        margin-top: -550px;
-        margin-left: -1140px;
-        transition: width 2s linear 1s;
-    }
-    .branding-002 {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        margin-top: -250px;
-        margin-left: -600px;
-    }
+}
+/*------------------------------------------------------Media queries to cut repetitive code*/
 
-    .branding-003 {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        margin-top: -300px;
-        margin-left: -500px;
-    }
+/*------------------------------------------------------Portfolio new thumbnails*/
+/* Create three equal columns that floats next to each other */
+.column {
+    text-align: center;
+}
+/* Clear floats after rows */
+/* Content */
+.content {
+    background-color: white;
+    text-align: center;
+}
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+.page-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -334px;
+    margin-left: -500px;
+    transition: width 2s linear 1s;
 
-    img.impact-white {
-        height: auto;
-    }
+}
+.branding-001 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -550px;
+    margin-left: -1140px;
+    transition: width 2s linear 1s;
+}
+.branding-002 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -600px;
+}
 
-    .res-image {
-        width: 200px;
-    }
+.branding-003 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -500px;
+}
 
-    .sub-title {
-        font-family: sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: smaller;
-        color: rgb(94, 155, 175);
-    }
+img.impact-white {
+    height: auto;
+}
+
+.res-image {
+    width: 200px;
+}
+
+.sub-title {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: smaller;
+    color: rgb(94, 155, 175);
+}
