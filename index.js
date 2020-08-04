@@ -17,6 +17,7 @@ app.use(express.static(path.join(__dirname, 'public/img/resume')));
 app.use(express.static(path.join(__dirname, 'public/img/chambers')));
 
 
+app.use(express.static(path.join(__dirname, 'public/img/ajax-api-crud-operations')));
 app.use(express.static(path.join(__dirname, 'public/img/geolocation')));
 app.use(express.static(path.join(__dirname, 'public/img/my-website-new')));
 app.use(express.static(path.join(__dirname, 'public/img/json-generator')));
@@ -63,6 +64,11 @@ app.set('view engine', '.hbs');
 
 const context = {
     toggleNav: [
+        {
+            name: 'Ajax CRUD Requests',
+            link: 'ajax-api',
+            topic: 'AJAX/jQuery/Node.js'
+        },
         {
             name: 'Geolocation App/API',
             link: 'geolocation',
@@ -275,6 +281,13 @@ const context = {
     ],
     portfolio: [
         {
+            link: 'ajax-api',
+            image: '1ajax-api.png',
+            alt: 'Ajax CRUD Requests',
+            name: 'Ajax CRUD Requests',
+            languages: 'AJAX. API, jQuery, Node.js'
+        },
+        {
             link: 'geolocation',
             image: '1geolocation.png',
             alt: 'Geolocation App',
@@ -455,6 +468,16 @@ const context = {
             alt: 'CSS Poster',
             name: 'CSS Poster',
             languages: 'HTML, CSS'
+        }
+    ],
+    ajaxApi: [
+        {
+            name: 'Ajax CRUD Requests',
+            link: 'https://ajax-api-crud-operations.herokuapp.com/',
+            alt: 'https://ajax-api-crud-operations.herokuapp.com/',
+            img1: '1ajax-api.png',
+            img2: '2ajax-api.png',
+            gitHub: 'https://github.com/jboyle1/AJAX-and-RESTful-API-that-uses-CRUD-RESTful-API-operations'
         }
     ],
     geolocation: [
@@ -796,6 +819,7 @@ app.get('/git-hub', (req, res) => res.render('git-hub', context));
 app.get('/contact', (req, res) => res.render('contact', context));
 
 // Project routes
+app.get('/ajax-api', (req, res) => res.render('ajax-api', context));
 app.get('/geolocation', (req, res) => res.render('geolocation', context));
 app.get('/my-website-new', (req, res) => res.render('my-website-new', context));
 app.get('/json-generator', (req, res) => res.render('json-generator', context));
