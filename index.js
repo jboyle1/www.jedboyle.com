@@ -17,6 +17,7 @@ app.use(express.static(path.join(__dirname, 'public/img/resume')));
 app.use(express.static(path.join(__dirname, 'public/img/chambers')));
 
 
+app.use(express.static(path.join(__dirname, 'public/img/git-hub-profile-finder')));
 app.use(express.static(path.join(__dirname, 'public/img/ajax-api-crud-operations')));
 app.use(express.static(path.join(__dirname, 'public/img/geolocation')));
 app.use(express.static(path.join(__dirname, 'public/img/my-website-new')));
@@ -65,7 +66,12 @@ app.set('view engine', '.hbs');
 const context = {
     toggleNav: [
         {
-            name: 'Ajax CRUD Requests',
+            name: 'GitHub Profiler API',
+            link: 'git-hub-profile-finder',
+            topic: 'AJAX/jQuery'
+        },
+        {
+            name: 'AJAX CRUD Requests',
             link: 'ajax-api',
             topic: 'AJAX/jQuery/Node.js'
         },
@@ -281,10 +287,17 @@ const context = {
     ],
     portfolio: [
         {
+            link: 'git-hub-profile-finder',
+            image: '1git-hub-profile-finder.png',
+            alt: 'GitHub Profile finder API',
+            name: 'GitHub Profile finder API',
+            languages: 'AJAX, API, jQuery'
+        },
+        {
             link: 'ajax-api',
             image: '1ajax-api.png',
-            alt: 'Ajax CRUD Requests',
-            name: 'Ajax CRUD Requests',
+            alt: 'AJAX CRUD Requests',
+            name: 'AJAX CRUD Requests',
             languages: 'AJAX. API, jQuery, Node.js'
         },
         {
@@ -470,13 +483,24 @@ const context = {
             languages: 'HTML, CSS'
         }
     ],
-    ajaxApi: [
+    gitHubProfileFinder: [
         {
-            name: 'Ajax CRUD Requests',
+            name: 'GitHub Profile Finder API',
             link: 'https://ajax-api-crud-operations.herokuapp.com/',
             alt: 'https://ajax-api-crud-operations.herokuapp.com/',
             img1: '1ajax-api.png',
             img2: '2ajax-api.png',
+            gitHub: 'https://github.com/jboyle1/github-profile-finder'
+        }
+    ],
+    ajaxApi: [
+        {
+            name: 'AJAX CRUD Requests',
+            link: 'https://jboyle1.github.io/github-profile-finder/',
+            alt: 'https://jboyle1.github.io/github-profile-finder/',
+            img1: '1git-hub-profile-finder.png',
+            img2: '2git-hub-profile-finder.png',
+            img3: '3git-hub-profile-finder.png',
             gitHub: 'https://github.com/jboyle1/AJAX-and-RESTful-API-that-uses-CRUD-RESTful-API-operations'
         }
     ],
@@ -819,6 +843,7 @@ app.get('/git-hub', (req, res) => res.render('git-hub', context));
 app.get('/contact', (req, res) => res.render('contact', context));
 
 // Project routes
+app.get('/git-hub-profile-finder', (req, res) => res.render('git-hub-profile-finder', context));
 app.get('/ajax-api', (req, res) => res.render('ajax-api', context));
 app.get('/geolocation', (req, res) => res.render('geolocation', context));
 app.get('/my-website-new', (req, res) => res.render('my-website-new', context));
