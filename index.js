@@ -486,21 +486,21 @@ const context = {
     gitHubProfileFinder: [
         {
             name: 'GitHub Profile Finder API',
-            link: 'https://ajax-api-crud-operations.herokuapp.com/',
-            alt: 'https://ajax-api-crud-operations.herokuapp.com/',
-            img1: '1ajax-api.png',
-            img2: '2ajax-api.png',
+            link: 'https://jboyle1.github.io/github-profile-finder/',
+            alt: 'https://jboyle1.github.io/github-profile-finder/',
+            img1: '1git-hub-profile-finder.png',
+            img2: '2git-hub-profile-finder.png',
+            img3: '3git-hub-profile-finder.png',
             gitHub: 'https://github.com/jboyle1/github-profile-finder'
         }
     ],
     ajaxApi: [
         {
             name: 'AJAX CRUD Requests',
-            link: 'https://jboyle1.github.io/github-profile-finder/',
-            alt: 'https://jboyle1.github.io/github-profile-finder/',
-            img1: '1git-hub-profile-finder.png',
-            img2: '2git-hub-profile-finder.png',
-            img3: '3git-hub-profile-finder.png',
+            link: 'https://ajax-api-crud-operations.herokuapp.com/',
+            alt: 'https://ajax-api-crud-operations.herokuapp.com/',
+            img1: '1ajax-api.png',
+            img2: '2ajax-api.png',
             gitHub: 'https://github.com/jboyle1/AJAX-and-RESTful-API-that-uses-CRUD-RESTful-API-operations'
         }
     ],
