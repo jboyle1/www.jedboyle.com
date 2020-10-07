@@ -313,7 +313,7 @@ const context = {
         },
         {
             link: 'paddy-pers',
-            image: '1o.png',
+            image: '1O.png',
             alt: 'Paddy Boyle photos',
             name: 'www.pboylephotograhpy.co.uk',
             languages: 'HTML, CSS, Node.js, Express, Handlebars'
