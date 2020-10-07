@@ -73,16 +73,16 @@ const context = {
             link: 'gazetteer',
             topic: 'AJAX/PHP/cURL/jQuery'
         },
-        // {
-        //     name: 'Paddy Boyle Photos',
-        //     link: 'paddy-pers',
-        //     topic: 'Node.js'
-        // },
-        // {
-        //     name: 'Paddy Boyle Photography',
-        //     link: 'paddy-com',
-        //     topic: 'Node.js'
-        // },
+        {
+            name: 'Paddy Boyle Photos',
+            link: 'paddy-pers',
+            topic: 'Node.js'
+        },
+        {
+            name: 'Paddy Boyle Photography',
+            link: 'paddy-com',
+            topic: 'Node.js'
+        },
         {
             name: 'GitHub Profiler API',
             link: 'git-hub-profile-finder',
@@ -311,20 +311,20 @@ const context = {
             name: 'Gazetteer Geolocation App',
             languages: 'AJAX, API, PHP, cURL, jQuery'
         },
-        // {
-        //     link: 'paddy-pers',
-        //     image: '1o.png',
-        //     alt: 'Paddy Boyle photos',
-        //     name: 'www.pboylephotograhpy.co.uk',
-        //     languages: 'HTML, CSS, Node.js, Express, Handlebars'
-        // },
-        // {
-        //     link: 'paddy-com',
-        //     image: '1N.png',
-        //     alt: 'Paddy Boyle photography',
-        //     name: 'www.pboylephotos.co.uk',
-        //     languages: 'HTML, CSS, Node.js, Express, Handlebars'
-        // },
+        {
+            link: 'paddy-pers',
+            image: '1o.png',
+            alt: 'Paddy Boyle photos',
+            name: 'www.pboylephotograhpy.co.uk',
+            languages: 'HTML, CSS, Node.js, Express, Handlebars'
+        },
+        {
+            link: 'paddy-com',
+            image: '1N.png',
+            alt: 'Paddy Boyle photography',
+            name: 'www.pboylephotos.co.uk',
+            languages: 'HTML, CSS, Node.js, Express, Handlebars'
+        },
         {
             link: 'git-hub-profile-finder',
             image: '1git-hub-profile-finder.png',
@@ -534,30 +534,30 @@ const context = {
             gitHub: 'https://github.com/jboyle1/geolocation-app-temp'
         }
     ],
-    // paddyPers: [
-    //     {
-    //         name: 'www.pboylephotos.co.uk',
-    //         link: 'https://pboylephotos.co.uk',
-    //         alt: 'https://pboylephotos.co.uk',
-    //         img1: '1O.png',
-    //         img2: '2O.png',
-    //         img3: '3O.png',
-    //         img4: '4O.png',
-    //         gitHub: 'https://github.com/jboyle1/paddy-boyle-photography-personal'
-    //     }
-    // ],
-    // paddyCom: [
-    //     {
-    //         name: 'www.pboylephotography.co.uk',
-    //         link: 'https://pboylephotography.co.uk',
-    //         alt: 'https://pboylephotography.co.uk',
-    //         img1: '1N.png',
-    //         img2: '2N.png',
-    //         img3: '3N.png',
-    //         img4: '4N.png',
-    //         gitHub: 'https://github.com/jboyle1/paddy-boyle-photography-commercial'
-    //     }
-    // ],
+    paddyPers: [
+        {
+            name: 'www.pboylephotos.co.uk',
+            link: 'https://pboylephotos.co.uk',
+            alt: 'https://pboylephotos.co.uk',
+            img1: '1O.png',
+            img2: '2O.png',
+            img3: '3O.png',
+            img4: '4O.png',
+            gitHub: 'https://github.com/jboyle1/paddy-boyle-photography-personal'
+        }
+    ],
+    paddyCom: [
+        {
+            name: 'www.pboylephotography.co.uk',
+            link: 'https://pboylephotography.co.uk',
+            alt: 'https://pboylephotography.co.uk',
+            img1: '1N.png',
+            img2: '2N.png',
+            img3: '3N.png',
+            img4: '4N.png',
+            gitHub: 'https://github.com/jboyle1/paddy-boyle-photography-commercial'
+        }
+    ],
     gitHubProfileFinder: [
         {
             name: 'GitHub Profile Finder API',
