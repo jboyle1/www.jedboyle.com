@@ -16,7 +16,10 @@ app.use(express.static(path.join(__dirname, 'public/img/logo-gif')));
 app.use(express.static(path.join(__dirname, 'public/img/resume')));
 app.use(express.static(path.join(__dirname, 'public/img/chambers')));
 
-
+// Image middleware
+app.use(express.static(path.join(__dirname, 'public/img/gazetteer')));
+app.use(express.static(path.join(__dirname, 'public/img/paddy-pers')));
+app.use(express.static(path.join(__dirname, 'public/img/paddy-com')));
 app.use(express.static(path.join(__dirname, 'public/img/git-hub-profile-finder')));
 app.use(express.static(path.join(__dirname, 'public/img/ajax-api-crud-operations')));
 app.use(express.static(path.join(__dirname, 'public/img/geolocation')));
@@ -65,6 +68,21 @@ app.set('view engine', '.hbs');
 
 const context = {
     toggleNav: [
+        {
+            name: 'Gazetteer Geolocation',
+            link: 'gazetteer',
+            topic: 'AJAX/PHP/cURL/jQuery'
+        },
+        // {
+        //     name: 'Paddy Boyle Photos',
+        //     link: 'paddy-pers',
+        //     topic: 'Node.js'
+        // },
+        // {
+        //     name: 'Paddy Boyle Photography',
+        //     link: 'paddy-com',
+        //     topic: 'Node.js'
+        // },
         {
             name: 'GitHub Profiler API',
             link: 'git-hub-profile-finder',
@@ -287,6 +305,27 @@ const context = {
     ],
     portfolio: [
         {
+            link: 'gazetteer',
+            image: 'new.png',
+            alt: 'Geolocation App',
+            name: 'Gazetteer Geolocation App',
+            languages: 'AJAX, API, PHP, cURL, jQuery'
+        },
+        // {
+        //     link: 'paddy-pers',
+        //     image: '1o.png',
+        //     alt: 'Paddy Boyle photos',
+        //     name: 'www.pboylephotograhpy.co.uk',
+        //     languages: 'HTML, CSS, Node.js, Express, Handlebars'
+        // },
+        // {
+        //     link: 'paddy-com',
+        //     image: '1N.png',
+        //     alt: 'Paddy Boyle photography',
+        //     name: 'www.pboylephotos.co.uk',
+        //     languages: 'HTML, CSS, Node.js, Express, Handlebars'
+        // },
+        {
             link: 'git-hub-profile-finder',
             image: '1git-hub-profile-finder.png',
             alt: 'GitHub Profile finder API',
@@ -483,6 +522,42 @@ const context = {
             languages: 'HTML, CSS'
         }
     ],
+    gazetteer: [
+        {
+            name: 'Gazeteer Geolocation App',
+            link: 'https://geolocation-test-001.herokuapp.com/',
+            alt: 'https://geolocation-test-001.herokuapp.com/',
+            img1: 'new.png',
+            img2: '1M.png',
+            img3: '2M.png',
+            img4: '3M.png',
+            gitHub: 'https://github.com/jboyle1/geolocation-app-temp'
+        }
+    ],
+    // paddyPers: [
+    //     {
+    //         name: 'www.pboylephotos.co.uk',
+    //         link: 'https://pboylephotos.co.uk',
+    //         alt: 'https://pboylephotos.co.uk',
+    //         img1: '1O.png',
+    //         img2: '2O.png',
+    //         img3: '3O.png',
+    //         img4: '4O.png',
+    //         gitHub: 'https://github.com/jboyle1/paddy-boyle-photography-personal'
+    //     }
+    // ],
+    // paddyCom: [
+    //     {
+    //         name: 'www.pboylephotography.co.uk',
+    //         link: 'https://pboylephotography.co.uk',
+    //         alt: 'https://pboylephotography.co.uk',
+    //         img1: '1N.png',
+    //         img2: '2N.png',
+    //         img3: '3N.png',
+    //         img4: '4N.png',
+    //         gitHub: 'https://github.com/jboyle1/paddy-boyle-photography-commercial'
+    //     }
+    // ],
     gitHubProfileFinder: [
         {
             name: 'GitHub Profile Finder API',
@@ -843,6 +918,9 @@ app.get('/git-hub', (req, res) => res.render('git-hub', context));
 app.get('/contact', (req, res) => res.render('contact', context));
 
 // Project routes
+app.get('/gazetteer', (req, res) => res.render('gazetteer', context));
+app.get('/paddy-pers', (req, res) => res.render('paddy-pers', context));
+app.get('/paddy-com', (req, res) => res.render('paddy-com', context));
 app.get('/git-hub-profile-finder', (req, res) => res.render('git-hub-profile-finder', context));
 app.get('/ajax-api', (req, res) => res.render('ajax-api', context));
 app.get('/geolocation', (req, res) => res.render('geolocation', context));
