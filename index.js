@@ -537,8 +537,8 @@ const context = {
     paddyPers: [
         {
             name: 'www.pboylephotos.co.uk',
-            link: 'https://pboylephotos.co.uk',
-            alt: 'https://pboylephotos.co.uk',
+            link: 'http://www.pboylephotos.co.uk/',
+            alt: 'http://www.pboylephotos.co.uk/',
             img1: '1O.png',
             img2: '2O.png',
             img3: '3O.png',
@@ -549,8 +549,8 @@ const context = {
     paddyCom: [
         {
             name: 'www.pboylephotography.co.uk',
-            link: 'https://pboylephotography.co.uk',
-            alt: 'https://pboylephotography.co.uk',
+            link: 'http://www.pboylephotography.co.uk/',
+            alt: 'http://www.pboylephotography.co.uk/',
             img1: '1N.png',
             img2: '2N.png',
             img3: '3N.png',
