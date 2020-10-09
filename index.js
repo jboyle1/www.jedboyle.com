@@ -525,13 +525,13 @@ const context = {
     gazetteer: [
         {
             name: 'Gazeteer Geolocation App',
-            link: 'https://geolocation-gazetteer.herokuapp.com/',
-            alt: 'https://geolocation-gazetteer.herokuapp.com/',
+            link: 'https://gazetteer-geolocation-app.herokuapp.com/',
+            alt: 'https://gazetteer-geolocation-app.herokuapp.com/',
             img1: 'new.png',
             img2: '1M.png',
             img3: '2M.png',
             img4: '3M.png',
-            gitHub: 'https://github.com/jboyle1/gazetteer'
+            gitHub: 'https://github.com/jboyle1/gazetteer-app'
         }
     ],
     paddyPers: [
