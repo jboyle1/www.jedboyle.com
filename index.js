@@ -531,6 +531,7 @@ const context = {
             img2: '1M.png',
             img3: '2M.png',
             img4: '3M.png',
+            img5: '4M.png',
             gitHub: 'https://github.com/jboyle1/gazetteer-app'
         }
     ],
