@@ -18,6 +18,7 @@ app.use(express.static(path.join(__dirname, 'public/img/chambers')));
 
 // Image middleware
 app.use(express.static(path.join(__dirname, 'public/img/gazetteer')));
+app.use(express.static(path.join(__dirname, 'public/img/wasteman')));
 app.use(express.static(path.join(__dirname, 'public/img/paddy-pers')));
 app.use(express.static(path.join(__dirname, 'public/img/paddy-com')));
 app.use(express.static(path.join(__dirname, 'public/img/git-hub-profile-finder')));
@@ -72,6 +73,11 @@ const context = {
             name: 'Gazetteer Geolocation',
             link: 'gazetteer',
             topic: 'AJAX/PHP/cURL/jQuery'
+        },
+        {
+            name: 'Wasteman Clearance',
+            link: 'wasteman',
+            topic: 'Bootstrap/JS'
         },
         {
             name: 'Paddy Boyle Photos',
@@ -312,6 +318,13 @@ const context = {
             languages: 'AJAX, API, PHP, cURL, jQuery'
         },
         {
+            link: 'wasteman',
+            image: '1z.png',
+            alt: 'Wasteman Clearance',
+            name: 'Wasteman Clearance',
+            languages: 'HTML, CSS, JS, Bootstrap'
+        },
+        {
             link: 'paddy-pers',
             image: '1O.png',
             alt: 'Paddy Boyle photos',
@@ -533,6 +546,21 @@ const context = {
             img4: '3M.png',
             img5: '4M.png',
             gitHub: 'https://github.com/jboyle1/gazetteer-app'
+        }
+    ],
+    wasteman: [
+        {
+            name: 'www.wastemanclearance.co.uk ',
+            link: 'http://www.wastemanclearance.co.uk/',
+            alt: 'http://www.wastemanclearance.co.uk/',
+            img1: '1z.png',
+            img2: '2z.png',
+            img3: '3z.png',
+            img4: '4z.png',
+            img5: '5z.png',
+            img6: '6z.png',
+            img7: '7z.png',
+            gitHub: 'https://github.com/jboyle1/wasteman-clearance'
         }
     ],
     paddyPers: [
@@ -920,6 +948,7 @@ app.get('/contact', (req, res) => res.render('contact', context));
 
 // Project routes
 app.get('/gazetteer', (req, res) => res.render('gazetteer', context));
+app.get('/wasteman', (req, res) => res.render('wasteman', context));
 app.get('/paddy-pers', (req, res) => res.render('paddy-pers', context));
 app.get('/paddy-com', (req, res) => res.render('paddy-com', context));
 app.get('/git-hub-profile-finder', (req, res) => res.render('git-hub-profile-finder', context));
