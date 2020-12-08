@@ -321,7 +321,7 @@ const context = {
             link: 'wasteman',
             image: '1z.png',
             alt: 'Wasteman Clearance',
-            name: 'Wasteman Clearance',
+            name: 'www.wastemanclearance.co.uk',
             languages: 'HTML, CSS, JS, Bootstrap'
         },
         {
