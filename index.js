@@ -73,12 +73,12 @@ const context = {
         {
             name: 'Commercial in Confidence',
             link: 'cic',
-            topic: 'MySQL/PHP/AJAX/jQuery'
+            topic: 'MySQL/PHP/AJAX'
         },
         {
             name: 'Gazetteer Geolocation',
             link: 'gazetteer',
-            topic: 'APIs/cURL/PHP/AJAX/jQuery'
+            topic: 'APIs/cURL/PHP/AJAX'
         },
         {
             name: 'Wasteman Clearance',
