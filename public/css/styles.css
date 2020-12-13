@@ -204,6 +204,14 @@ form {
     margin-bottom: auto;
     padding-bottom: 15px;
 }
+.text-left {
+    width: 80%;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    padding-bottom: 15px;
+}
 .logo1-001 {
     text-align: center;
     margin: 50px auto 30px;

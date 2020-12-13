@@ -1,5 +1,5 @@
 <main>
-   {{#each  wasteman}}
+   {{#each cic}}
     <section class="container-fluid">
         <div class="row bg-color-contact">
             <div class="container">
@@ -13,7 +13,7 @@
         <div class="row bg-color-contact">
             <div class="container">
                 <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-                    <h3 class="section-heading4" style="font-weight: 700;">
+                    <h3 class="section-heading4 ">
                         <a href="{{this.link}}" target="_blank">{{this.name}}</a>
                     </h3>
                 </div>
@@ -67,7 +67,18 @@
                                                     <div class="carousel-caption"></div>
                                                 </a>
                                             </div>
-                                            
+                                            <div class="item">
+                                            <a href="{{this.link}}" target="_blank">
+                                                <img src="{{this.img8}}" alt="{{this.alt}}">
+                                                    <div class="carousel-caption"></div>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                            <a href="{{this.link}}" target="_blank">
+                                                <img src="{{this.img9}}" alt="{{this.alt}}">
+                                                    <div class="carousel-caption"></div>
+                                                </a>
+                                            </div>
                                             <a
                                                 class="left carousel-control"
                                                 href="#carousel-example-generic"
@@ -85,7 +96,6 @@
                                                 <span class="sr-only">Next</span>
                                             </a>
                                         </div>
-                                        
                                         <br></div>
                                     </div>
                                 </div>
@@ -93,11 +103,19 @@
                                     <h3 class="my-3">Project Description</h3>
                                     <br>
                                     <p class="poject-description">
-                                        I developed this website for a client who has a waste clearance company. For this commission the client wanted full branding and social media marketing services. I was happy to provide this. I have a degree in graphic design and know what is involved in branding and marketing.
-
+                                        The main requirements for this project are to manipulate a database that consists of user information. This data is given by employees that work for a company. This design will run on CRUD functionality (create, read, update, and delete). The front end code will display the retrieved data and allow for user input while the back end will manage these requests. The data is to be presented in a directory that allows for easy searching of staff, departments, and locations by single or multiple criteria. This system will have a responsive interface and designed with mobile-first in mind.
                                         <br>
                                         <br>
-                                        I designed a logo, flyers, business cards, social media graphics, and a website for this job. There are mockups of each in the image slides. The site is a simple, single page, static website. The clients needs were uncomplicated. I spent more time on the branding than the actual site. It is fully responsive and there are links to all of his social media pages. I created an animation for his Facebook sponsored adverts.
+                                        For development the local server will be XAMPP’s Apache server. XAMPP is a free and open-source cross-platform web server solution stack package developed by Apache, consisting mainly of the Apache HTTP Server, MariaDB database, and interpreters for scripts written in the PHP and Perl programming languages. When I deploy the app to Heroku, I will switch the server to Sequel Pro.
+                                        <br>
+                                        <br>
+                                        MySql is a language used for managing data held in a relational database management system (RDBMS) and is particularly useful in handling structured data, i.e. data incorporating relations among entities and variables. I will use MySql to manipulate the data in the database according to CRUD functionality.
+                                        <br>
+                                        <br>
+                                        After setting up the development environment the first step is to code the front end. Using prepared wireframes as a guide and/or templates/code snippets to speed up development, this step will involve the use of HTML, CSS, Javascript, and the bootstrap framework in an index.php file. The design will be mobile-first which will reduce errors with responsiveness down the line. Once the interface is ready for its dynamic content any design improvements can be revised at a later stage. Once this stage is complete there should be a table that displays the data received from the database and buttons that will be used to add, edit and delete said data. The input forms will be in modals.
+                                        <br>
+                                        <br>
+                                        In the back end, to add employee records to the database I will create an AJAX POST request using jQuery in an external Javascript file. This function will be passed to a PHP file with a routine for connecting to the database and adding data. The same goes for editing data and deleting data (name, departments, locations, etc). To search the database I will use the same method to develop a live search without reloading the page.
                                         <br>
                                         <br>
                                         <!-- <a href="assets/cv/UX_for-nfc.pdf{{uiDesign}}" target="_blank"> Click here
@@ -113,16 +131,21 @@
                                     <h4 class="my-4 text-center">Project Description</h4>
                                     <br>
                                     <p class="poject-description-001 text-left">
-                                        I developed this website for a client who has a waste clearance company. For this commission the client wanted full branding and social media marketing services. I was happy to provide this. I have a degree in graphic design and know what is involved in branding and marketing.
-                                        <br>
-                                        <br
-                                        >I designed a logo, flyers, business cards, social media graphics, and a website for this job. There are mockups of each in the image slides. The site is a simple, single page, static website. The clients needs were uncomplicated. I spent more time on the branding than the actual site. It is fully responsive and there are links to all of his social media pages. I created an animation for his Facebook sponsored adverts.
-
-
+                                        The main requirements for this project are to manipulate a database that consists of user information. This data is given by employees that work for a company. This design will run on CRUD functionality (create, read, update, and delete). The front end code will display the retrieved data and allow for user input while the back end will manage these requests. The data is to be presented in a directory that allows for easy searching of staff, departments, and locations by single or multiple criteria. This system will have a responsive interface and designed with mobile-first in mind.
                                         <br>
                                         <br>
-                                        
-
+                                        For development the local server will be XAMPP’s Apache server. XAMPP is a free and open-source cross-platform web server solution stack package developed by Apache, consisting mainly of the Apache HTTP Server, MariaDB database, and interpreters for scripts written in the PHP and Perl programming languages. When I deploy the app to Heroku, I will switch the server to Sequel Pro.
+                                        <br>
+                                        <br>
+                                        MySql is a language used for managing data held in a relational database management system (RDBMS) and is particularly useful in handling structured data, i.e. data incorporating relations among entities and variables. I will use MySql to manipulate the data in the database according to CRUD functionality.
+                                        <br>
+                                        <br>
+                                        After setting up the development environment the first step is to code the front end. Using prepared wireframes as a guide and/or templates/code snippets to speed up development, this step will involve the use of HTML, CSS, Javascript, and the bootstrap framework in an index.php file. The design will be mobile-first which will reduce errors with responsiveness down the line. Once the interface is ready for its dynamic content any design improvements can be revised at a later stage. Once this stage is complete there should be a table that displays the data received from the database and buttons that will be used to add, edit and delete said data. The input forms will be in modals.
+                                        <br>
+                                        <br>
+                                        In the back end, to add employee records to the database I will create an AJAX POST request using jQuery in an external Javascript file. This function will be passed to a PHP file with a routine for connecting to the database and adding data. The same goes for editing data and deleting data (name, departments, locations, etc). To search the database I will use the same method to develop a live search without reloading the page.
+                                        <br>
+                                        <br>
                                         <!-- <a href="assets/cv/UX_for-nfc.pdf{{uiDesign}}" target="_blank"> Click here
                                         to read the UX/UI design development for this porject</a> 
                                         <br>

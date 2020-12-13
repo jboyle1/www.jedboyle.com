@@ -18,6 +18,7 @@ app.use(express.static(path.join(__dirname, 'public/img/chambers')));
 
 // Image middleware
 app.use(express.static(path.join(__dirname, 'public/img/gazetteer')));
+app.use(express.static(path.join(__dirname, 'public/img/cic')));
 app.use(express.static(path.join(__dirname, 'public/img/wasteman')));
 app.use(express.static(path.join(__dirname, 'public/img/paddy-pers')));
 app.use(express.static(path.join(__dirname, 'public/img/paddy-com')));
@@ -70,9 +71,14 @@ app.set('view engine', '.hbs');
 const context = {
     toggleNav: [
         {
+            name: 'Commercial in Confidence',
+            link: 'cic',
+            topic: 'MySQL/PHP/AJAX/jQuery'
+        },
+        {
             name: 'Gazetteer Geolocation',
             link: 'gazetteer',
-            topic: 'AJAX/PHP/cURL/jQuery'
+            topic: 'APIs/cURL/PHP/AJAX/jQuery'
         },
         {
             name: 'Wasteman Clearance',
@@ -90,6 +96,26 @@ const context = {
             topic: 'Node.js'
         },
         {
+            name: 'Jackie Ceramics Site',
+            link: 'jackie-ceramics',
+            topic: 'Bootstrap'
+        },
+        {
+            name: 'My Website',
+            link: 'my-website-new',
+            topic: 'Node.js/Express/HBS'
+        }, 
+        {
+            name: 'Phoenix Beading Site',
+            link: 'phoenix-beading',
+            topic: 'Bootstrap'
+        },
+        {
+            name: 'Neighbourhood Site',
+            link: 'nfc',
+            topic: 'Bootstrap'
+        },
+        {
             name: 'GitHub Profiler API',
             link: 'git-hub-profile-finder',
             topic: 'AJAX/jQuery'
@@ -105,10 +131,6 @@ const context = {
             topic: 'AJAX/PHP/CURL/JSON'
         },
         {
-            name: 'My Website',
-            link: 'my-website-new',
-            topic: 'Node.js/Express/HBS'
-        }, {
             name: 'Json Generator App',
             link: 'json-generator',
             topic: 'AJAX'
@@ -181,25 +203,9 @@ const context = {
             link: 'trivia-card',
             topic: 'jQuery'
         }, {
-            name: 'Phoenix Beading Site',
-            link: 'phoenix-beading',
-            topic: 'Bootstrap'
-        }, {
-            name: 'Jackie Ceramics Site',
-            link: 'jackie-ceramics',
-            topic: 'Bootstrap'
-        },, {
-            name: 'Paddy Boyle Site',
-            link: 'paddy-boyle',
-            topic: 'Bootstrap'
-        }, {
             name: 'Academia Stats',
             link: 'academia-stats',
             topic: 'DC.js/Crossfilter'
-        }, {
-            name: 'Neighbourhood Site',
-            link: 'nfc',
-            topic: 'Bootstrap'
         }, {
             name: 'Connect Four Game',
             link: 'connect-four',
@@ -311,11 +317,18 @@ const context = {
     ],
     portfolio: [
         {
+            link: 'cic',
+            image: '1cic.png',
+            alt: 'Employee Directory',
+            name: 'Commercial in Confidence App',
+            languages: 'MySQL, PHP, AJAX, jQuery'
+        },
+        {
             link: 'gazetteer',
             image: 'new.png',
             alt: 'Geolocation App',
             name: 'Gazetteer Geolocation App',
-            languages: 'AJAX, API, PHP, cURL, jQuery'
+            languages: 'API, cURL, PHP, AJAX, jQuery'
         },
         {
             link: 'wasteman',
@@ -339,6 +352,34 @@ const context = {
             languages: 'HTML, CSS, Node.js, Express, Handlebars'
         },
         {
+            link: 'jackie-ceramics',
+            image: '1j-summerfield-ceramics.png',
+            alt: 'www.jsummerfieldceramics.co.uk',
+            name: 'www.jsummerfieldceramics.co.uk',
+            languages: 'HTML, CSS, JS, Bootstrap'
+        },
+        {
+            link: 'my-website-new',
+            image: '3my-website-new.png',
+            alt: 'www.jedboyle.com',
+            name: 'www.jedboyle.com',
+            languages: 'HTML, CSS, Node.js, Express, Handlebars'
+        },
+        {
+            link: 'phoenix-beading',
+            image: '1phoenix-beading.png',
+            alt: 'www.phoenixbeading.co.uk',
+            name: 'www.phoenixbeading.co.uk',
+            languages: 'HTML, CSS, JS, Bootstrap'
+        }, 
+        {
+            link: 'nfc',
+            image: '1neighbourhood-for-change.jpg',
+            alt: 'www.neighbourhoodforchange.co.uk',
+            name: 'www.neighbourhoodforchange.co.uk',
+            languages: 'HTML, CSS, JS, Bootstrap'
+        },
+        {
             link: 'git-hub-profile-finder',
             image: '1git-hub-profile-finder.png',
             alt: 'GitHub Profile finder API',
@@ -360,12 +401,6 @@ const context = {
             languages: 'AJAX. API, PHP, CURL, JSON'
         },
         {
-            link: 'my-website-new',
-            image: '3my-website-new.png',
-            alt: 'www.jedboyle.com',
-            name: 'www.jedboyle.com',
-            languages: 'HTML, CSS, Node.js, Express, Handlebars'
-        }, {
             link: 'json-generator',
             image: '1json-generator.png',
             alt: 'JSON Generator App with API',
@@ -474,35 +509,11 @@ const context = {
             name: 'Trivia Card App',
             languages: 'HTML, CSS, JQuery'
         }, {
-            link: 'phoenix-beading',
-            image: '1phoenix-beading.png',
-            alt: 'www.phoenixbeading.co.uk',
-            name: 'www.phoenixbeading.co.uk',
-            languages: 'HTML, CSS, JS, Bootstrap'
-        }, {
-            link: 'jackie-ceramics',
-            image: '1j-summerfield-ceramics.png',
-            alt: 'www.jsummerfieldceramics.co.uk',
-            name: 'www.jsummerfieldceramics.co.uk',
-            languages: 'HTML, CSS, JS, Bootstrap'
-        }, {
-            link: 'paddy-boyle',
-            image: '1p-boyle-photography.png',
-            alt: 'www.pboylephotography.com',
-            name: 'www.pboylephotography.com',
-            languages: 'HTML, CSS, JS, Bootstrap'
-        }, {
             link: 'gender-in-academia',
             image: '1gender-in-academia.png',
             alt: 'www.genderinacademia.co.uk',
             name: 'www.genderinacademia.co.uk',
             languages: 'HTML, CSS, DC.js, Crossfilter'
-        }, {
-            link: 'nfc',
-            image: '1neighbourhood-for-change.jpg',
-            alt: 'www.neighbourhoodforchange.co.uk',
-            name: 'www.neighbourhoodforchange.co.uk',
-            languages: 'HTML, CSS, JS, Bootstrap'
         }, {
             link: 'connect-four',
             image: '4connect-four.jpg',
@@ -533,6 +544,23 @@ const context = {
             alt: 'CSS Poster',
             name: 'CSS Poster',
             languages: 'HTML, CSS'
+        }
+    ],
+    cic: [
+        {
+            name: 'Commercial in Confidence',
+            link: 'https://commercial-in-confidence-app.herokuapp.com/',
+            alt: 'https://commercial-in-confidence-app.herokuapp.com/',
+            img1: '1cic.png',
+            img2: '2cic.png',
+            img3: '3cic.png',
+            img4: '6cic.png',
+            img5: '5cic.png',
+            img6: '4cic.png',
+            img7: '9cic.png',
+            img8: '8cic.png',
+            img9: '7cic.png',
+            gitHub: 'https://github.com/jboyle1/commercial-in-confidence-app'
         }
     ],
     gazetteer: [
@@ -587,6 +615,58 @@ const context = {
             gitHub: 'https://github.com/jboyle1/paddy-boyle-photography-commercial'
         }
     ],
+    jackieCeramics: [
+        {
+            name: 'www.jsummerfieldceramics.co.uk',
+            link: 'https://www.jsummerfieldceramics.co.uk/',
+            alt: 'https://www.jsummerfieldceramics.co.uk/',
+            img1: '1j-summerfield-ceramics.png',
+            img2: '2j-summerfield-ceramics.png',
+            img3: '3j-summerfield-ceramics.png',
+            img4: '4j-summerfield-ceramics.png',
+            img5: '5j-summerfield-ceramics.png',
+            gitHub: 'https://github.com/jboyle1/www.jsummerfieldceramics.co.uk'
+        }
+    ],
+    myWebsiteNew: [
+        {
+            name: 'www.jedboyle.com',
+            link: 'https://www.jedboyle.com/',
+            alt: 'https://www.jedboyle.com/',
+            img1: '1my-website-new.png',
+            img2: '2my-website-new.png',
+            img3: '3my-website-new.png',
+            uiDesign: 'my-ux',
+            gitHub: 'https://github.com/jboyle1/www.neighbourhoodforchange.com'
+        }
+    ],
+    phoenixBeading: [
+        {
+            name: 'Phoenix Beading Site',
+            link: 'https://phoenixbeading.co.uk/',
+            alt: 'https://phoenixbeading.co.uk/',
+            img1: '1phoenix-beading.png',
+            img2: '2phoenix-beading.png',
+            img3: '3phoenix-beading.png',
+            img4: '4phoenix-beading.png',
+            gitHub: 'https://github.com/jboyle1/www.phoenixbeading.co.uk'
+        }
+    ],
+    nFC: [
+        {
+            name: 'www.neighbourhoodforchange.co.uk',
+            link: 'https://jboyle1.github.io/www.neighbourhoodforchange.com/',
+            alt: 'https://jboyle1.github.io/www.neighbourhoodforchange.com/',
+            img1: '1neighbourhood-for-change.jpg',
+            img2: '2neighbourhood-for-change.jpg',
+            img3: '3neighbourhood-for-change.png',
+            img9: '9neighbourhood-for-change.png',
+            img10: '10neighbourhood-for-change.png',
+            img11: '11neighbourhood-for-change.png',
+            img12: '12neighbourhood-for-change.png',
+            gitHub: 'https://github.com/jboyle1/www.neighbourhoodforchange.com'
+        }
+    ],
     gitHubProfileFinder: [
         {
             name: 'GitHub Profile Finder API',
@@ -616,18 +696,6 @@ const context = {
             img1: '1geolocation.png',
             img2: '2geolocation.png',
             gitHub: 'https://github.com/jboyle1/geolocation-project'
-        }
-    ],
-    myWebsiteNew: [
-        {
-            name: 'www.jedboyle.com',
-            link: 'https://www.jedboyle.com/',
-            alt: 'https://www.jedboyle.com/',
-            img1: '1my-website-new.png',
-            img2: '2my-website-new.png',
-            img3: '3my-website-new.png',
-            uiDesign: 'my-ux',
-            gitHub: 'https://github.com/jboyle1/www.neighbourhoodforchange.com'
         }
     ],
     jsonGenerator: [
@@ -810,45 +878,6 @@ const context = {
             gitHub: 'https://github.com/jboyle1/trivia-card-jquery-project'
         }
     ],
-    phoenixBeading: [
-        {
-            name: 'Phoenix Beading Site',
-            link: 'https://phoenixbeading.co.uk/',
-            alt: 'https://phoenixbeading.co.uk/',
-            img1: '1phoenix-beading.png',
-            img2: '2phoenix-beading.png',
-            img3: '3phoenix-beading.png',
-            img4: '4phoenix-beading.png',
-            gitHub: 'https://github.com/jboyle1/www.phoenixbeading.co.uk'
-        }
-    ],
-    jackieCeramics: [
-        {
-            name: 'www.jsummerfieldceramics.co.uk',
-            link: 'https://www.jsummerfieldceramics.co.uk/',
-            alt: 'https://www.jsummerfieldceramics.co.uk/',
-            img1: '1j-summerfield-ceramics.png',
-            img2: '2j-summerfield-ceramics.png',
-            img3: '3j-summerfield-ceramics.png',
-            img4: '4j-summerfield-ceramics.png',
-            img5: '5j-summerfield-ceramics.png',
-            gitHub: 'https://github.com/jboyle1/www.jsummerfieldceramics.co.uk'
-        }
-    ],
-    paddyBoyle: [
-        {
-            name: 'www.jsummerfieldceramics.co.uk',
-            link: 'https://www.pboylephotography.com/',
-            alt: 'https://www.pboylephotography.com/',
-            img1: '1p-boyle-photography.png',
-            img2: '2p-boyle-photography.png',
-            img3: '3p-boyle-photography.png',
-            img4: '4p-boyle-photography.png',
-            img5: '5p-boyle-photography.png',
-            img6: '6p-boyle-photography.png',
-            gitHub: 'https://github.com/jboyle1/www.pboylephotography.com'
-        }
-    ],
     genderInAcademia: [
         {
             name: 'www.genderinacademia.co.uk',
@@ -857,21 +886,6 @@ const context = {
             img1: '1gender-in-academia.png',
             img2: '2gender-in-academia.png',
             gitHub: 'https://github.com/jboyle1/www.genderinacademia.co.uk'
-        }
-    ],
-    nFC: [
-        {
-            name: 'www.neighbourhoodforchange.co.uk',
-            link: 'https://jboyle1.github.io/www.neighbourhoodforchange.com/',
-            alt: 'https://jboyle1.github.io/www.neighbourhoodforchange.com/',
-            img1: '1neighbourhood-for-change.jpg',
-            img2: '2neighbourhood-for-change.jpg',
-            img3: '3neighbourhood-for-change.png',
-            img9: '9neighbourhood-for-change.png',
-            img10: '10neighbourhood-for-change.png',
-            img11: '11neighbourhood-for-change.png',
-            img12: '12neighbourhood-for-change.png',
-            gitHub: 'https://github.com/jboyle1/www.neighbourhoodforchange.com'
         }
     ],
     connectFourGame: [
@@ -947,6 +961,7 @@ app.get('/git-hub', (req, res) => res.render('git-hub', context));
 app.get('/contact', (req, res) => res.render('contact', context));
 
 // Project routes
+app.get('/cic', (req, res) => res.render('cic', context));
 app.get('/gazetteer', (req, res) => res.render('gazetteer', context));
 app.get('/wasteman', (req, res) => res.render('wasteman', context));
 app.get('/paddy-pers', (req, res) => res.render('paddy-pers', context));
@@ -1009,6 +1024,7 @@ app.get('/dry-ux', function (req, res) {
         res.send(data);
     });
 });
+
 
 // To run the web server, create a variable called PORT that evaluates to a
 // hosted port or a local port
