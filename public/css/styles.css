@@ -8,7 +8,7 @@ html {
 /*------------------------------------------------------Colors*/
 
 .bg-color-name-title {
-    background-color: #415f77;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1)0%, rgba(64, 96, 112, 1) 100%);
     background-repeat: no-repeat;
     background-position: right;
     padding-top: 22px;
@@ -50,10 +50,10 @@ html {
     padding-bottom: 40px;
 }
 .bg-color-name-title-001 {
-    background-color: #415f77;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1)0%, rgba(64, 96, 112, 1) 100%);
 }
 .bg-color-name-title-002 {
-    background-color: #415f77;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1)0%, rgba(64, 96, 112, 1) 100%);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 360px;
@@ -318,12 +318,72 @@ header {
     font-weight: 300;
     letter-spacing: 2px;
 }
+
+/* .menuitem-1 a {
+    color: #000000;
+}
+.menuitem-1 a i {
+    color: #000000;
+}
+.menuitem-1 span {
+    color: #000000;
+}
+
+.menuitem-2 a {
+    color: #333333;
+}
+.menuitem-2 a i {
+    color: #333333;
+}
+.menuitem-2 span {
+    color: #333333;
+}
+
+.menuitem-3 a {
+    color: #545454;
+}
+.menuitem-3 a i {
+    color: #545454;
+}
+.menuitem-3 span {
+    color: #545454;
+}
+
+.menuitem-4 a {
+    color: #c5c5c5;
+}
+.menuitem-4 a i {
+    color: #c5c5c5;
+}
+.menuitem-4 span {
+    color: #c5c5c5;
+}
+
+.menuitem-5 a {
+    color: #d6d6d6;
+}
+.menuitem-5 a i {
+    color: #d6d6d6;
+}
+.menuitem-5 span {
+    color: #d6d6d6;
+}
+
+.menuitem-6 a {
+    color: #ffffff;
+}
+.menuitem-6 a i {
+    color: #ffffff;
+}
+.menuitem-6 span {
+    color: #ffffff;
+} */
 /*------------------------------------------------------Navbar*/
 .navbar-default {
-    background-color: #406070;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1)0%, rgba(64, 96, 112, 1) 100%);
 }
 .navbar-header {
-    background-color: #415f77;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1)0%, rgba(64, 96, 112, 1) 100%);
     border: none;
 }
 .navbar-default {
@@ -336,11 +396,11 @@ header {
 }
 .navbar-collapse {
     border: none;
-    background-color: #415f77;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1)0%, rgba(64, 96, 112, 1) 100%);
     padding-top: -2px;
 }
 .navbar-default .navbar-nav > li > a {
-    color: white;
+    color: rgb(104, 104, 104);
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
@@ -360,10 +420,10 @@ header {
 }
 .collapse {
     border: none;
-    background-color: #406070;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1)0%, rgba(64, 96, 112, 1) 100%);
 }
 header {
-    background-color: #415f77;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1)0%, rgba(64, 96, 112, 1) 100%);
 }
 .collapsed {
     margin-top: 20px;
