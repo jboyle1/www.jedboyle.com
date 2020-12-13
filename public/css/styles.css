@@ -39,11 +39,11 @@ html {
 }
 .bg-color-work-history {
     background: rgb(97,97,97);
-    background: linear-gradient(0deg, rgba(97,97,97,1) 0%, rgba(179,179,179,1) 100%);
+    background: linear-gradient(0deg, rgba(77, 77, 77, 1)0%, rgba(179,179,179,1) 100%);
 }
 .bg-color-personal-info {
     background: rgb(97,97,97);
-    background: linear-gradient(0deg, rgba(97,97,97,1) 0%, rgba(204,204,204,1) 100%);
+    background: linear-gradient(0deg, rgba(77, 77, 77, 1) 0%, rgba(204,204,204,1) 100%);
 }
 .bg-color-contact {
     background-color: white;
