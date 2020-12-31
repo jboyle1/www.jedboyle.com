@@ -1,5 +1,5 @@
 <main>
-   {{#each gazetteer}}
+    {{#each gazetteer}}
     <section class="container-fluid">
         <div class="row bg-color-contact">
             <div class="container">
@@ -8,6 +8,22 @@
                         <a href="{{this.link}}" target="_blank">{{this.name}}</a>
                     </h3>
                 </div>
+            </div>
+            <div class="hidden-xs col-sm-12 col-md-12">
+                <ls class="section-code-symbols-large">
+                    <ul><img src="{{this.iconImg1}}"></ul>
+                    <ul><img src="{{this.iconImg2}}"></ul>
+                    <ul><img src="{{this.iconImg3}}"></ul>
+                    <ul><img src="{{this.iconImg4}}"></ul>
+                    <ul><img src="{{this.iconImg5}}"></ul>
+                    <ul><img src="{{this.iconImg6}}"></ul>
+                    <ul><img src="{{this.iconImg7}}"></ul>
+                    <ul><img src="{{this.iconImg8}}"></ul>
+                    <ul><img src="{{this.iconImg9}}"></ul>
+                    <ul><img src="{{this.iconImg10}}"></ul>
+                    <ul><img src="{{this.iconImg11}}"></ul>
+          
+                </ls>
             </div>
         </div>
         <div class="row bg-color-contact">
@@ -28,106 +44,153 @@
                                 <div class="item active">
                                     <a href="{{this.link}}" target="_blank">
                                         <img src="{{this.img1}}" alt="{{this.alt}}">
-                                            <div class="carousel-caption"></div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="{{this.link}}" target="_blank">
-                                            <img src="{{this.img2}}" alt="{{this.alt}}">
-                                                <div class="carousel-caption"></div>
-                                            </a>
-                                        </div>
-                                        <div class="item">
-                                            <a href="{{this.link}}" target="_blank">
-                                                <img src="{{this.img3}}" alt="{{this.alt}}">
-                                                    <div class="carousel-caption"></div>
-                                                </a>
-                                            </div>
-                                            <div class="item">
-                                            <a href="{{this.link}}" target="_blank">
-                                                <img src="{{this.img4}}" alt="{{this.alt}}">
-                                                    <div class="carousel-caption"></div>
-                                                </a>
-                                            </div>
-                                            <div class="item">
-                                            <a href="{{this.link}}" target="_blank">
-                                                <img src="{{this.img5}}" alt="{{this.alt}}">
-                                                    <div class="carousel-caption"></div>
-                                                </a>
-                                            </div>
-                                            <a
-                                                class="left carousel-control"
-                                                href="#carousel-example-generic"
-                                                role="button"
-                                                data-slide="prev">
-                                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                                <span class="sr-only">Previous</span>
-                                            </a>
-                                            <a
-                                                class="right carousel-control"
-                                                href="#carousel-example-generic"
-                                                role="button"
-                                                data-slide="next">
-                                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                                <span class="sr-only">Next</span>
-                                            </a>
-                                        </div>
-                                        <br></div>
-                                    </div>
+                                        <div class="carousel-caption"></div>
+                                    </a>
                                 </div>
-                                <div class="hidden-xs col-sm-12 col-md-4 col-lg-3">
-                                    <h3 class="my-3">Project Description</h3>
-                                    <br>
-                                    <p class="poject-description">
-                                        Gazetteer is a geolocation app. It is a project I undertook while studying on a full stack web development course. When the main page loads, the country the user is located in will be highlighted in blue and data related to that country will be accessible in the left hand side bar. Ths data includes; demographic data, geographic data, airports near the capital, Covid-19 statistics, and a news column. All the data is dynamically displayed using restful APIs. 
-                                        <br>
-                                        <br>
-                                        There is also a dropdown selection feature that allows you to choose any county in the world, when a country is chosen this will also highlight the country and give you the same related data. In addition to this, on the main map screen there is a button that allows you to change the map layer from a satellite view to a night view. I have also added functionality that lets you toggle on and off towns and cities within population tiers. These include tooltips when you hover the mouse over them. Lastly I added another radio button so the user can check the weather of all the cities with a population over a million (this also includes tooltips with a forecast for the next five days.
-                                        <br>
-                                        <br>
-                                        This project was very enjoyable, but that is not to say it wasn't challenging. The methods include the use of restful APIs, jQuery, AJAX, PHP, and cURL. I also used Geojson data to highlight the country borders. Using all these technologies in conjunction with one another was an essential learning curve. This project has given me a more holistic perception of programming and what is possible to create by manipulating data.
-                                        <br>
-                                        <br>
-                                        The APIs used in this project are; Leaflet.js, Aero Data Box, Covid-19, Open Weather Map, Reverse Geocoding and Geolocation Service, and World Geo Data.
-                                        <br>
-                                        <br>
-                                        <!-- <a href="assets/cv/UX_for-nfc.pdf{{uiDesign}}" target="_blank"> Click here
-                                        to read the UX/UI design development for this porject</a> 
-                                        <br>
-                                        <br>-->
-                                        <a href="{{this.gitHub}}" target="_blank">Click here for GitHub repository</a>
-                                    </p>
-                                    <br>
+                                <div class="item">
+                                    <a href="{{this.link}}" target="_blank">
+                                        <img src="{{this.img2}}" alt="{{this.alt}}">
+                                        <div class="carousel-caption"></div>
+                                    </a>
                                 </div>
-                                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-                                <br>
-                                    <h4 class="my-4 text-center">Project Description</h4>
-                                    <br>
-                                    <p class="poject-description-001 text-left">
-                                        Gazetteer is a geolocation app. It is a project I undertook while studying on a full stack web development course. When the main page loads, the country the user is located in will be highlighted in blue and data related to that country will be accessible in the left hand side bar. Ths data includes; demographic data, geographic data, airports near the capital, Covid-19 statistics, and a news column. All the data is dynamically displayed using restful APIs. 
-                                        <br>
-                                        <br>
-                                        There is also a dropdown selection feature that allows you to choose any county in the world, when a country is chosen this will also highlight the country and give you the same related data. In addition to this, on the main map screen there is a button that allows you to change the map layer from a satellite view to a night view. I have also added functionality that lets you toggle on and off towns and cities within population tiers. These include tooltips when you hover the mouse over them. Lastly I added another radio button so the user can check the weather of all the cities with a population over a million (this also includes tooltips with a forecast for the next five days.
-                                        <br>
-                                        <br>
-                                        This project was very enjoyable, but that is not to say it wasn't challenging. The methods include the use of restful APIs, jQuery, AJAX, PHP, and cURL. I also used Geojson data to highlight the country borders. Using all these technologies in conjunction with one another was an essential learning curve. This project has given me a more holistic perception of programming and what is possible to create by manipulating data.
-                                        <br>
-                                        <br>
-                                        The APIs used in this project are; Leaflet.js, Aero Data Box, Covid-19, Open Weather Map, Reverse Geocoding and Geolocation Service, and World Geo Data.
-                                        <br>
-                                        <br>
-                                        <!-- <a href="assets/cv/UX_for-nfc.pdf{{uiDesign}}" target="_blank"> Click here
-                                        to read the UX/UI design development for this porject</a> 
-                                        <br>
-                                        <br>-->
-                                        <a href="{{this.gitHub}}" target="_blank">Click here for GitHub repository</a>
-                                        </p>
-                                        <br>
-                                    </div>
+                                <div class="item">
+                                    <a href="{{this.link}}" target="_blank">
+                                        <img src="{{this.img3}}" alt="{{this.alt}}">
+                                        <div class="carousel-caption"></div>
+                                    </a>
                                 </div>
+                                <div class="item">
+                                    <a href="{{this.link}}" target="_blank">
+                                        <img src="{{this.img4}}" alt="{{this.alt}}">
+                                        <div class="carousel-caption"></div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="{{this.link}}" target="_blank">
+                                        <img src="{{this.img5}}" alt="{{this.alt}}">
+                                        <div class="carousel-caption"></div>
+                                    </a>
+                                </div>
+                                <a class="left carousel-control" href="#carousel-example-generic" role="button"
+                                    data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" role="button"
+                                    data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
-                        </section>
-                        {{/each}}
-                    </main>
+                            <br>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                    <div class="container-fluid">
+                        <div class="align-icons2">
+                            <ls class="section-code-symbols-small-gaz">
+                                <ul><img src="{{this.iconImg1}}"></ul>
+                                <ul><img src="{{this.iconImg2}}"></ul>
+                                <ul><img src="{{this.iconImg3}}"></ul>
+                                <ul><img src="{{this.iconImg4}}"></ul>
+                                <ul><img src="{{this.iconImg5}}"></ul>
+                                <ul><img src="{{this.iconImg6}}"></ul>
+                                <ul><img src="{{this.iconImg7}}"></ul>
+                                <ul><img src="{{this.iconImg8}}"></ul>
+                                <ul><img src="{{this.iconImg9}}"></ul>
+                                <ul><img src="{{this.iconImg10}}"></ul>
+                                <ul><img src="{{this.iconImg11}}"></ul>
+                
+                            </ls>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="hidden-xs col-sm-12 col-md-4 col-lg-3">
+                    <h3 class="my-3">Project Description</h3>
+                    <br>
+                    <p class="poject-description">
+                        Gazetteer is a geolocation app. It is a project I undertook while studying on a full stack web
+                        development course. When the main page loads, the country the user is located in will be
+                        highlighted in blue and data related to that country will be accessible in the left hand side
+                        bar. Ths data includes; demographic data, geographic data, airports near the capital, Covid-19
+                        statistics, and a news column. All the data is dynamically displayed using restful APIs.
+                        <br>
+                        <br>
+                        There is also a dropdown selection feature that allows you to choose any county in the world,
+                        when a country is chosen this will also highlight the country and give you the same related
+                        data. In addition to this, on the main map screen there is a button that allows you to change
+                        the map layer from a satellite view to a night view. I have also added functionality that lets
+                        you toggle on and off towns and cities within population tiers. These include tooltips when you
+                        hover the mouse over them. Lastly I added another radio button so the user can check the weather
+                        of all the cities with a population over a million (this also includes tooltips with a forecast
+                        for the next five days.
+                        <br>
+                        <br>
+                        This project was very enjoyable, but that is not to say it wasn't challenging. The methods
+                        include the use of restful APIs, jQuery, AJAX, PHP, and cURL. I also used Geojson data to
+                        highlight the country borders. Using all these technologies in conjunction with one another was
+                        an essential learning curve. This project has given me a more holistic perception of programming
+                        and what is possible to create by manipulating data.
+                        <br>
+                        <br>
+                        The APIs used in this project are; Leaflet.js, Aero Data Box, Covid-19, Open Weather Map,
+                        Reverse Geocoding and Geolocation Service, and World Geo Data.
+                        <br>
+                        <br>
+                        <!-- <a href="assets/cv/UX_for-nfc.pdf{{uiDesign}}" target="_blank"> Click here
+                                        to read the UX/UI design development for this porject</a> 
+                                        <br>
+                                        <br>-->
+                        <a href="{{this.gitHub}}" target="_blank">Click here for GitHub repository</a>
+                    </p>
+                    <br>
+                </div>
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                    <br>
+                    <h4 class="my-4 text-center">Project Description</h4>
+                    <br>
+                    <p class="poject-description-001 text-left">
+                        Gazetteer is a geolocation app. It is a project I undertook while studying on a full stack web
+                        development course. When the main page loads, the country the user is located in will be
+                        highlighted in blue and data related to that country will be accessible in the left hand side
+                        bar. Ths data includes; demographic data, geographic data, airports near the capital, Covid-19
+                        statistics, and a news column. All the data is dynamically displayed using restful APIs.
+                        <br>
+                        <br>
+                        There is also a dropdown selection feature that allows you to choose any county in the world,
+                        when a country is chosen this will also highlight the country and give you the same related
+                        data. In addition to this, on the main map screen there is a button that allows you to change
+                        the map layer from a satellite view to a night view. I have also added functionality that lets
+                        you toggle on and off towns and cities within population tiers. These include tooltips when you
+                        hover the mouse over them. Lastly I added another radio button so the user can check the weather
+                        of all the cities with a population over a million (this also includes tooltips with a forecast
+                        for the next five days.
+                        <br>
+                        <br>
+                        This project was very enjoyable, but that is not to say it wasn't challenging. The methods
+                        include the use of restful APIs, jQuery, AJAX, PHP, and cURL. I also used Geojson data to
+                        highlight the country borders. Using all these technologies in conjunction with one another was
+                        an essential learning curve. This project has given me a more holistic perception of programming
+                        and what is possible to create by manipulating data.
+                        <br>
+                        <br>
+                        The APIs used in this project are; Leaflet.js, Aero Data Box, Covid-19, Open Weather Map,
+                        Reverse Geocoding and Geolocation Service, and World Geo Data.
+                        <br>
+                        <br>
+                        <!-- <a href="assets/cv/UX_for-nfc.pdf{{uiDesign}}" target="_blank"> Click here
+                                        to read the UX/UI design development for this porject</a> 
+                                        <br>
+                                        <br>-->
+                        <a href="{{this.gitHub}}" target="_blank">Click here for GitHub repository</a>
+                    </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{/each}}
+</main>
