@@ -322,63 +322,63 @@ const context = {
             image: '1cic.png',
             alt: 'Employee Directory',
             name: 'Commercial in Confidence App',
-            languages: 'MySQL, PHP, AJAX, jQuery'
+            // languages: 'MySQL, PHP, AJAX, jQuery'
         },
         {
             link: 'gazetteer',
             image: 'new.png',
             alt: 'Geolocation App',
             name: 'Gazetteer Geolocation App',
-            languages: 'API, cURL, PHP, AJAX, jQuery'
+            // languages: 'API, cURL, PHP, AJAX, jQuery'
         },
         {
             link: 'wasteman',
             image: '1z.png',
             alt: 'Wasteman Clearance',
             name: 'www.wastemanclearance.co.uk',
-            languages: 'HTML, CSS, JS, Bootstrap'
+            // languages: 'HTML, CSS, JS, Bootstrap'
         },
         {
             link: 'paddy-pers',
             image: '1O.png',
             alt: 'Paddy Boyle photos',
             name: 'www.pboylephotograhpy.co.uk',
-            languages: 'HTML, CSS, Node.js, Express, Handlebars'
+            // languages: 'HTML, CSS, Node.js, Express, Handlebars'
         },
         {
             link: 'paddy-com',
             image: '1N.png',
             alt: 'Paddy Boyle photography',
             name: 'www.pboylephotos.co.uk',
-            languages: 'HTML, CSS, Node.js, Express, Handlebars'
+            // languages: 'HTML, CSS, Node.js, Express, Handlebars'
         },
         {
             link: 'jackie-ceramics',
             image: '1j-summerfield-ceramics.png',
             alt: 'www.jsummerfieldceramics.co.uk',
             name: 'www.jsummerfieldceramics.co.uk',
-            languages: 'HTML, CSS, JS, Bootstrap'
+            // languages: 'HTML, CSS, JS, Bootstrap'
         },
         {
             link: 'my-website-new',
             image: '3my-website-new.png',
             alt: 'www.jedboyle.com',
             name: 'www.jedboyle.com',
-            languages: 'HTML, CSS, Node.js, Express, Handlebars'
+            // languages: 'HTML, CSS, Node.js, Express, Handlebars'
         },
         {
             link: 'phoenix-beading',
             image: '1phoenix-beading.png',
             alt: 'www.phoenixbeading.co.uk',
             name: 'www.phoenixbeading.co.uk',
-            languages: 'HTML, CSS, JS, Bootstrap'
+            // languages: 'HTML, CSS, JS, Bootstrap'
         },
         {
             link: 'nfc',
             image: '1neighbourhood-for-change.jpg',
             alt: 'www.neighbourhoodforchange.co.uk',
             name: 'www.neighbourhoodforchange.co.uk',
-            languages: 'HTML, CSS, JS, Bootstrap'
+            // languages: 'HTML, CSS, JS, Bootstrap'
         },
         {
             link: 'git-hub-profile-finder',
@@ -560,16 +560,17 @@ const context = {
         img7: '9cic.png',
         img8: '8cic.png',
         img9: '7cic.png',
-        iconImg1: 'html-5.png',
-        iconImg2: 'css.png',
-        iconImg3: 'javascript.png',
-        iconImg4: 'bootstrap.png',
-        iconImg5: 'jquery.png',
-        iconImg6: 'ajax.png',
-        iconImg7: 'php.png',
-        iconImg8: 'mysql.png',
-        iconImg9: 'sequelpro.jpg',
-        iconImg10: 'heroku.png',
+        iconImg1: 'XAMPP.png',
+        iconImg2: 'html-5.png',
+        iconImg3: 'css.png',
+        iconImg4: 'javascript.png',
+        iconImg5: 'bootstrap.png',
+        iconImg6: 'jquery.png',
+        iconImg7: 'ajax.png',
+        iconImg8: 'php.png',
+        iconImg9: 'mysql.png',
+        iconImg10: 'sequelpro.jpg',
+        iconImg11: 'heroku.png',
         gitHub: 'https://github.com/jboyle1/commercial-in-confidence-app'
     }],
     gazetteer: [{
@@ -581,17 +582,18 @@ const context = {
         img3: '2M.png',
         img4: '3M.png',
         img5: '4M.png',
-        iconImg1: 'html-5.png',
-        iconImg2: 'css.png',
-        iconImg3: 'javascript.png',
-        iconImg4: 'bootstrap.png',
-        iconImg5: 'jquery.png',
-        iconImg6: 'ajax.png',
-        iconImg7: 'php.png',
-        iconImg8: 'curl.png',
-        iconImg9: 'leaflet.png',
-        iconImg10: 'open-weather.png',
-        iconImg11: 'heroku.png',
+        iconImg1: 'XAMPP.png',
+        iconImg2: 'html-5.png',
+        iconImg3: 'css.png',
+        iconImg4: 'javascript.png',
+        iconImg5: 'bootstrap.png',
+        iconImg6: 'jquery.png',
+        iconImg7: 'ajax.png',
+        iconImg8: 'php.png',
+        iconImg9: 'curl.png',
+        iconImg10: 'leaflet.png',
+        iconImg11: 'open-weather.png',
+        iconImg12: 'heroku.png',
         gitHub: 'https://github.com/jboyle1/gazetteer-app'
     }],
     wasteman: [{
@@ -605,6 +607,11 @@ const context = {
         img5: '5z.png',
         img6: '6z.png',
         img7: '7z.png',
+        iconImg1: 'html-5.png',
+        iconImg2: 'css.png',
+        iconImg3: 'javascript.png',
+        iconImg4: 'bootstrap.png',
+        iconImg5: 'PRS-Fasthosts.png',
         gitHub: 'https://github.com/jboyle1/wasteman-clearance'
     }],
     paddyPers: [{
@@ -615,6 +622,14 @@ const context = {
         img2: '2O.png',
         img3: '3O.png',
         img4: '4O.png',
+        iconImg1: 'node.png',
+        iconImg2: 'html-5.png',
+        iconImg3: 'css.png',
+        iconImg4: 'javascript.png',
+        iconImg5: 'bootstrap.png',
+        iconImg6: 'ex.png',
+        iconImg7: 'hbs.png',
+        iconImg8: 'heroku.png',
         gitHub: 'https://github.com/jboyle1/paddy-boyle-photography-personal'
     }],
     paddyCom: [{
@@ -625,6 +640,14 @@ const context = {
         img2: '2N.png',
         img3: '3N.png',
         img4: '4N.png',
+        iconImg1: 'node.png',
+        iconImg2: 'html-5.png',
+        iconImg3: 'css.png',
+        iconImg4: 'javascript.png',
+        iconImg5: 'bootstrap.png',
+        iconImg6: 'ex.png',
+        iconImg7: 'hbs.png',
+        iconImg8: 'heroku.png',
         gitHub: 'https://github.com/jboyle1/paddy-boyle-photography-commercial'
     }],
     jackieCeramics: [{
@@ -636,6 +659,12 @@ const context = {
         img3: '3j-summerfield-ceramics.png',
         img4: '4j-summerfield-ceramics.png',
         img5: '5j-summerfield-ceramics.png',
+        iconImg1: 'html-5.png',
+        iconImg2: 'css.png',
+        iconImg3: 'javascript.png',
+        iconImg4: 'snipcart.png',
+        iconImg5: 'bootstrap.png',
+        iconImg6: 'PRS-Fasthosts.png',
         gitHub: 'https://github.com/jboyle1/www.jsummerfieldceramics.co.uk'
     }],
     myWebsiteNew: [{
@@ -645,6 +674,14 @@ const context = {
         img1: '1my-website-new.png',
         img2: '2my-website-new.png',
         img3: '3my-website-new.png',
+        iconImg1: 'node.png',
+        iconImg2: 'html-5.png',
+        iconImg3: 'css.png',
+        iconImg4: 'javascript.png',
+        iconImg5: 'bootstrap.png',
+        iconImg6: 'ex.png',
+        iconImg7: 'hbs.png',
+        iconImg8: 'heroku.png',
         uiDesign: 'my-ux',
         gitHub: 'https://github.com/jboyle1/www.neighbourhoodforchange.com'
     }],
@@ -656,6 +693,12 @@ const context = {
         img2: '2phoenix-beading.png',
         img3: '3phoenix-beading.png',
         img4: '4phoenix-beading.png',
+        iconImg1: 'html-5.png',
+        iconImg2: 'css.png',
+        iconImg3: 'javascript.png',
+        iconImg4: 'snipcart.png',
+        iconImg5: 'bootstrap.png',
+        iconImg6: 'PRS-Fasthosts.png',
         gitHub: 'https://github.com/jboyle1/www.phoenixbeading.co.uk'
     }],
     nFC: [{
@@ -669,6 +712,11 @@ const context = {
         img10: '10neighbourhood-for-change.png',
         img11: '11neighbourhood-for-change.png',
         img12: '12neighbourhood-for-change.png',
+        iconImg1: 'html-5.png',
+        iconImg2: 'css.png',
+        iconImg3: 'javascript.png',
+        iconImg4: 'bootstrap.png',
+        iconImg5: 'PRS-Fasthosts.png',
         gitHub: 'https://github.com/jboyle1/www.neighbourhoodforchange.com'
     }],
     gitHubProfileFinder: [{

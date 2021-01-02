@@ -928,6 +928,12 @@ button[type="submit"] {
     margin: auto;
 }
 
+.con-tooltip {
+    width: 40px;
+    float: left;
+    padding-right: 10px;
+}
+
 .section-code-symbols-large img {
     width: 40px;
     float: left;
@@ -941,11 +947,188 @@ button[type="submit"] {
     margin-bottom: 30px;
 }
 
-.section-code-symbols-small-gaz img {
-    width: 8.33%;
+.section-code-symbols-small-waste img {
+    width: 8%;
     padding-right: 10px;
     float: left;
     margin-bottom: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.section-code-symbols-small-pad img {
+    width: 7.5%;
+    padding-right: 10px;
+    float: left;
+    margin-bottom: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.section-code-symbols-small-jack img {
+    width: 7.5%;
+    padding-right: 10px;
+    float: left;
+    margin-bottom: 30px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.section-code-symbols-small-nfc img {
+    width: 8%;
+    padding-right: 10px;
+    float: left;
+    margin-bottom: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/*------------------------------------------------------Tool Tips*/
+
+
+/*tooltip Box*/
+
+.con-tooltip {
+    position: relative;
+    border-radius: 9px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    cursor: default;
+}
+
+
+/*tooltip */
+
+.tooltip {
+    visibility: hidden;
+    z-index: 1;
+    opacity: .40;
+    width: 100%;
+    padding: 0px 40px;
+    background: #333;
+    color: #fff;
+    position: absolute;
+    top: -140%;
+    left: -60%;
+    border-radius: 9px;
+    font: 12px;
+    transform: translateY(9px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3px rgba(56, 54, 54, 0.86);
+}
+
+
+/* tooltip  after*/
+
+.tooltip::after {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12.5px 0 12.5px;
+    border-color: #333 transparent transparent transparent;
+    position: absolute;
+    left: 35%;
+}
+
+.con-tooltip:hover .tooltip {
+    visibility: visible;
+    transform: translateY(-10px);
+    opacity: 1;
+    transition: .3s linear;
+    animation: odsoky 1s ease-in-out infinite alternate;
+}
+
+@keyframes odsoky {
+    0% {
+        transform: translateY(6px);
+    }
+    100% {
+        transform: translateY(1px);
+    }
+}
+
+
+/*hover ToolTip*/
+
+.top:hover {
+    transform: translateY(-6px);
+}
+
+.pLeftMargin1 {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-left: -20px;
+    padding: 2px;
+}
+
+.pLeftMargin2 {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-left: -15px;
+    padding: 2px;
+}
+
+.pLeftMargin3 {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-left: -30px;
+    padding: 2px;
+}
+
+.pLeftMargin4 {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-left: -20px;
+    padding: 2px;
+}
+
+.pLeftMargin5 {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-left: -17px;
+    padding: 2px;
+}
+
+.pLeftMargin6 {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-left: -30px;
+    padding: 2px;
+}
+
+.pLeftMargin7 {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-left: -38px;
+    padding: 4px;
+    font-size: 8px;
+}
+
+.pLeftMargin8 {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-left: -38px;
+    padding: 4px;
+    font-size: 11px;
+}
+
+.pLeftMargin9 {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-left: -25px;
+    padding: 4px;
+    font-size: 11px;
 }
 
 
