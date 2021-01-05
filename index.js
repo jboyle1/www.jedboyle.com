@@ -1,4 +1,3 @@
-const https = require('https');
 // Require 'express' for templating.
 const express = require('express');
 // Place express module in a variable called 'app'.
@@ -8,7 +7,7 @@ const path = require('path');
 // Require handlebars for data templating.
 const exphbs = require('express-handlebars');
 // Require 'fs' for PDF viewer.
-const fs = require('fs');
+fs = require('fs')
 
 // Create public middleware so static files are accessible.
 app.use(express.static(path.join(__dirname, 'public/css')));
@@ -1025,23 +1024,9 @@ app.get('/dry-ux', function(req, res) {
 });
 
 
-// // To run the web server, create a variable called PORT that evaluates to a
-// // hosted port or a local port
-// const PORT = process.env.PORT || 5000;
-// // run express 'listen' on 'app' on 'PORT' with a callback function second
-// // parameter that console logs that the server is running on the specific port.
-// app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
-
-
-
-
-// app.use('/', (req, res, next) => {
-//     res.send('Hello from SSL server')
-// });
-
-const sslServer = https.createServer({
-    key: fs.readFileSync(path.join(__dirname, 'cert', 'key.pem')),
-    cert: fs.readFileSync(path.join(__dirname, 'cert', 'cert.pem')),
-}, app);
-
-sslServer.listen(3000, () => console.log('Secure server 🚀🔑 on port 3000'));
+// To run the web server, create a variable called PORT that evaluates to a
+// hosted port or a local port
+const PORT = process.env.PORT || 5000;
+// run express 'listen' on 'app' on 'PORT' with a callback function second
+// parameter that console logs that the server is running on the specific port.
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
