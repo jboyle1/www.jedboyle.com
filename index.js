@@ -237,8 +237,16 @@ const context = {
         }
     ],
     workHistory: [{
+        dates: '01/2020 - 01/2021',
+        link: 'https://itcareerswitch.co.uk/coding-traineeship/',
+        image: 'itcs2.png',
+        alt: 'IT Career Switch, Full Stack Coding Bootcamp',
+        name: 'IT Career Switch',
+        inst: 'Accredited Training Course',
+        info: 'Full Stack Coding Bootcamp'
+    }, {
         dates: '01/2019 - 01/2020',
-        link: 'shorturl.at/LZ345',
+        link: 'https://codeinstitute.net/',
         image: 'ci.png',
         alt: 'Code Institute, Full Stack Coding Bootcamp',
         name: 'Code Institute',
