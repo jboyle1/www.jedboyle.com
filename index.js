@@ -1008,7 +1008,7 @@ app.get('/css-poster', (req, res) => res.render('css-poster', context));
 
 // Route for PDF viewer
 app.get('/cv', function(req, res) {
-    var filePath = "/public/pdfs/jedboylecv2020.pdf";
+    var filePath = "/public/pdfs/CURRICULUM-VITAE.pdf";
     fs.readFile(__dirname + filePath, function(err, data) {
         res.contentType("application/pdf");
         res.send(data);
