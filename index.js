@@ -334,8 +334,8 @@ const context = {
     portfolio: [{
             link: 'pibot',
             image: 'pibot5.png',
-            alt: 'Raspberry Pi Remote controlled Robot',
-            name: 'Raspberry Pi Remote controlled Robot',
+            alt: 'Raspberry Pi Remote Controlled Robot',
+            name: 'Raspberry Pi Remote Controlled Robot',
             // languages: 'MySQL, PHP, AJAX, jQuery'
         }, {
             link: 'cic',
@@ -568,7 +568,7 @@ const context = {
         }
     ],
     pibot: [{
-        name: 'Raspberry Pi Remote controlled Robot',
+        name: 'Raspberry Pi Remote Controlled Robot',
         link: 'https://commercial-in-confidence-app.herokuapp.com/',
         alt: 'https://commercial-in-confidence-app.herokuapp.com/',
         img1: 'pibot1.png',
