@@ -1,0 +1,162 @@
+<main>
+    {{#each pibot}}
+    <section class="container-fluid">
+        <div class="row bg-color-contact">
+            <div class="container">
+                <div class="hidden-xs col-sm-12 col-md-12">
+                    <h3 class="section-heading3 ">
+                        <a href="{{this.link}}" target="_blank">{{this.name}}</a>
+                    </h3>
+                </div>
+
+                
+            </div>
+
+
+
+            
+            <div class="hidden-xs col-sm-12 col-md-12">
+                <ls class="section-code-symbols-large">
+                    <ul><div class="con-tooltip top"><a href="https://en.wikipedia.org/wiki/XAMPP"><img src="{{this.iconImg1}}"><div class="tooltip"></a><p class="pLeftMargin8">RaspberryPi</p></div></div></ul>
+                    <ul><div class="con-tooltip top"><a href="https://en.wikipedia.org/wiki/HTML5"><img src="{{this.iconImg2}}" ><div class="tooltip"></a><p class="pLeftMargin1">Circuit Python</p></div></div></ul>
+                    <ul><div class="con-tooltip top"><a href="https://en.wikipedia.org/wiki/CSS"><img src="{{this.iconImg3}}" style="margin-top: 1px"><div class="tooltip"></a><p class="pLeftMargin4">Python</p></div></div></ul>
+                    <ul><div class="con-tooltip top"><a href="https://en.wikipedia.org/wiki/JavaScript"><img src="{{this.iconImg4}}" style="margin-top: 2px"><div class="tooltip"></a><p class="pLeftMargin3">Mosquitto</p></div></div></ul>
+                    <ul><div class="con-tooltip top"><a href="https://en.wikipedia.org/wiki/Bootstrap_%28front-end_framework%29"><img src="{{this.iconImg5}}" style="width: 50px;"><div class="tooltip"></a><p class="pLeftMargin4">MQTT</p></div></div></ul>
+                    <ul><div class="con-tooltip top"><a href="https://en.wikipedia.org/wiki/JQuery"><img src="{{this.iconImg6}}"><div class="tooltip"></a><p class="pLeftMargin4">Xcode</p></div></div></ul>                    
+                </ls>
+            </div>
+        </div>
+        <div class="row bg-color-contact">
+            <div class="container">
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                    <h3 class="section-heading4 ">
+                        <a href="{{this.link}}" target="_blank">{{this.name}}</a>
+
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="slideshow-container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="poj-image">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <a href="{{this.link}}" target="_blank">
+                                        <img src="{{this.img5}}" alt="{{this.alt}}">
+                                        <div class="carousel-caption"></div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="{{this.link}}" target="_blank">
+                                        <img src="{{this.img1}}" alt="{{this.alt}}">
+                                        <div class="carousel-caption"></div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="{{this.link}}" target="_blank">
+                                        <img src="{{this.img4}}" alt="{{this.alt}}">
+                                        <div class="carousel-caption"></div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="{{this.link}}" target="_blank">
+                                        <img src="{{this.img3}}" alt="{{this.alt}}">
+                                        <div class="carousel-caption"></div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="{{this.link}}" target="_blank">
+                                        <img src="{{this.img2}}" alt="{{this.alt}}">
+                                        <div class="carousel-caption"></div>
+                                    </a>
+                                </div>
+                                <a class="left carousel-control" href="#carousel-example-generic" role="button"
+                                    data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" role="button"
+                                    data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                    <div class="container-fluid">
+                        <div class="align-icons">
+                            <ls class="section-code-symbols-small-pibot">
+                                <ul><img src="{{this.iconImg1}}"></ul>
+                                <ul><img src="{{this.iconImg2}}"></ul>
+                                <ul><img src="{{this.iconImg3}}"></ul>
+                                <ul><img src="{{this.iconImg4}}"></ul>
+                                <ul><img src="{{this.iconImg5}}"></ul>
+                                <ul><img src="{{this.iconImg6}}"></ul>
+                            </ls>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="hidden-xs col-sm-12 col-md-4 col-lg-3">
+                    <h3 class="my-3">Project Description</h3>
+                    <br>
+                    <p class="poject-description">
+                        This was a research project I undertook to better understand MQTT broker-client relationships. I am working with a business partner on a project that utilizes this secure messaging system for the internet of things. 
+                        <br>
+                        <br>
+                        I created a Raspberry Pi remote controlled robot using Youtube tutorials made by<a href="https://www.youtube.com/channel/UC8LSi2K9F6rmREBhNXzENHQ" target="_blank"> john John Gallaugher</a>. You can find this totorial<a href="https://www.youtube.com/playlist?list=PL9VJ9OpT-IPR-Vg1FpDeANEGx-4namu_j" target="_blank"> here</a>
+                        <br>
+                        <br>
+                        This series of videos required me to purchase all the hardware. This included a Raspberry Pi 4, the Wave Share motor driver HAT, the mini round chassis kit, and various other cables and components. The robot takes Python commands via Circuit Python. Which are transmitted from a mobile app interface (made on Xcode) that acts as an MQTT client. I used the Mosquitto MQTT broker to receive the topic messages.
+                        <br>
+                        <br>
+                        This project gave me a more solidified understanding of MQTT broker to client messaging and was fun to work on. 
+                        <br>
+                        <br>
+                        <!-- <a href="assets/cv/UX_for-nfc.pdf{{uiDesign}}" target="_blank"> Click here
+                                        to read the UX/UI design development for this porject</a> 
+                                        <br>
+                                        <br>-->
+                        <a href="{{this.gitHub}}" target="_blank">Click here for GitHub repository</a>
+                    </p>
+                    <br>
+                </div>
+                <br>
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                    <br>
+                    <h4 class="my-4 text-center">Project Description</h4>
+                    <br>
+                    <p class="poject-description-001 text-left">
+                       This was a research project I undertook to better understand MQTT broker-client relationships. I am working with a business partner on a project that utilizes this secure messaging system for the internet of things. 
+                        <br>
+                        <br>
+                        I created a Raspberry Pi remote controlled robot using Youtube tutorials made by<a href="https://www.youtube.com/channel/UC8LSi2K9F6rmREBhNXzENHQ" target="_blank"> john John Gallaugher</a>. You can find this totorial<a href="https://www.youtube.com/playlist?list=PL9VJ9OpT-IPR-Vg1FpDeANEGx-4namu_j" target="_blank"> here</a>
+                        <br>
+                        <br>
+                        This series of videos required me to purchase all the hardware. This included a Raspberry Pi 4, the Wave Share motor driver HAT, the mini round chassis kit, and various other cables and components. The robot takes Python commands via Circuit Python. Which are transmitted from a mobile app interface (made on Xcode) that acts as an MQTT client. I used the Mosquitto MQTT broker to receive the topic messages.
+                        <br>
+                        <br>
+                        This project gave me a more solidified understanding of MQTT broker to client messaging and was fun to work on. 
+                        <br>
+                        <br>
+                        <!-- <a href="assets/cv/UX_for-nfc.pdf{{uiDesign}}" target="_blank"> Click here
+                                        to read the UX/UI design development for this porject</a> 
+                                        <br>
+                                        <br>-->
+                        <a href="{{this.gitHub}}" target="_blank">Click here for GitHub repository</a>
+                    </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{/each}}
+</main>

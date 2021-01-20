@@ -18,6 +18,7 @@ app.use(express.static(path.join(__dirname, 'public/img/chambers')));
 app.use(express.static(path.join(__dirname, 'public/img/language-icons')));
 
 // Image middleware
+app.use(express.static(path.join(__dirname, 'public/img/pibot')));
 app.use(express.static(path.join(__dirname, 'public/img/gazetteer')));
 app.use(express.static(path.join(__dirname, 'public/img/cic')));
 app.use(express.static(path.join(__dirname, 'public/img/wasteman')));
@@ -75,6 +76,11 @@ app.set('view engine', '.hbs');
 
 const context = {
     toggleNav: [{
+            name: 'Raspberry Pi Robot',
+            link: 'pibot',
+            topic: 'RaspberryPi/Python'
+        },
+        {
             name: 'Commercial in Confidence',
             link: 'cic',
             topic: 'MySQL/PHP/AJAX'
@@ -326,6 +332,12 @@ const context = {
         info: 'Manufacturing Engineering, Merit'
     }],
     portfolio: [{
+            link: 'pibot',
+            image: 'pibot5.png',
+            alt: 'Raspberry Pi Remote controlled Robot',
+            name: 'Raspberry Pi Remote controlled Robot',
+            // languages: 'MySQL, PHP, AJAX, jQuery'
+        }, {
             link: 'cic',
             image: '1cic.png',
             alt: 'Employee Directory',
@@ -555,6 +567,23 @@ const context = {
             languages: 'HTML, CSS'
         }
     ],
+    pibot: [{
+        name: 'Raspberry Pi Remote controlled Robot',
+        link: 'https://commercial-in-confidence-app.herokuapp.com/',
+        alt: 'https://commercial-in-confidence-app.herokuapp.com/',
+        img1: 'pibot1.png',
+        img2: 'pibot2.png',
+        img3: 'pibot3.png',
+        img4: 'pibot4.png',
+        img5: 'pibot5.png',
+        iconImg1: 'Raspi_Colour_R.png',
+        iconImg2: 'circuitpython.png',
+        iconImg3: 'Python.png',
+        iconImg4: 'mosquitto-logo.png',
+        iconImg5: 'MQTT_icon.png',
+        iconImg6: 'xcode-icon.png',
+        gitHub: 'https://github.com/gallaugher/PiBot'
+    }],
     cic: [{
         name: 'Commercial in Confidence',
         link: 'https://commercial-in-confidence-app.herokuapp.com/',
@@ -967,6 +996,7 @@ app.get('/git-hub', (req, res) => res.render('git-hub', context));
 app.get('/contact', (req, res) => res.render('contact', context));
 
 // Project routes
+app.get('/pibot', (req, res) => res.render('pibot', context));
 app.get('/cic', (req, res) => res.render('cic', context));
 app.get('/gazetteer', (req, res) => res.render('gazetteer', context));
 app.get('/wasteman', (req, res) => res.render('wasteman', context));
