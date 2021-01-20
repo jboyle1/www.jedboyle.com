@@ -580,7 +580,7 @@ const context = {
         iconImg2: 'circuitpython.png',
         iconImg3: 'Python.png',
         iconImg4: 'mosquitto-logo.png',
-        iconImg5: 'MQTT_icon.png',
+        iconImg5: 'MQTT_Icon.png',
         iconImg6: 'xcode-icon.png',
         gitHub: 'https://github.com/gallaugher/PiBot'
     }],
