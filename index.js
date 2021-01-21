@@ -576,6 +576,8 @@ const context = {
         img3: 'pibot3.png',
         img4: 'pibot4.png',
         img5: 'pibot5.png',
+        img6: 'pibot6.png',
+        img7: 'pibot7.png',
         iconImg1: 'Raspi_Colour_R.png',
         iconImg2: 'circuitpython.png',
         iconImg3: 'Python.png',
