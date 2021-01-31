@@ -18,6 +18,7 @@ app.use(express.static(path.join(__dirname, 'public/img/chambers')));
 app.use(express.static(path.join(__dirname, 'public/img/language-icons')));
 
 // Image middleware
+app.use(express.static(path.join(__dirname, 'public/img/pizza-fanatic')));
 app.use(express.static(path.join(__dirname, 'public/img/pibot')));
 app.use(express.static(path.join(__dirname, 'public/img/gazetteer')));
 app.use(express.static(path.join(__dirname, 'public/img/cic')));
@@ -76,6 +77,11 @@ app.set('view engine', '.hbs');
 
 const context = {
     toggleNav: [{
+            name: 'Pizza Fanatic App',
+            link: 'pizza-fanatic',
+            topic: 'PHP/MySQL'
+        },
+        {
             name: 'Raspberry Pi Robot',
             link: 'pibot',
             topic: 'RaspberryPi/Python'
@@ -332,6 +338,12 @@ const context = {
         info: 'Manufacturing Engineering, Merit'
     }],
     portfolio: [{
+            link: 'pizza-fanatic',
+            image: 'pizza-fanatic1.png',
+            alt: 'Pizza Order App ',
+            name: 'Pizza Order App',
+            // languages: 'MySQL, PHP'
+        },{
             link: 'pibot',
             image: 'pibot5.png',
             alt: 'Raspberry Pi Remote Controlled Robot',
@@ -567,6 +579,23 @@ const context = {
             languages: 'HTML, CSS'
         }
     ],
+    pizzaFanatic: [{
+        name: 'Pizza Fanatic - Pizza Order App',
+        link: 'https://pizza-fanatic-app.herokuapp.com/',
+        alt: 'https://pizza-fanatic-app.herokuapp.com/',
+        img1: 'pizza-fanatic1.png',
+        img2: 'pizza-fanatic2.png',
+        img3: 'pizza-fanatic3.png',
+        img4: 'pizza-fanatic4.png',
+        iconImg1: 'XAMPP.png',
+        iconImg2: 'html-5.png',
+        iconImg3: 'css.png',
+        iconImg4: 'php.png',
+        iconImg5: 'mysql.png',
+        iconImg6: 'sequelpro.jpg',
+        iconImg7: 'heroku.png',
+        gitHub: 'https://github.com/jboyle1/pizza-fanatic'
+    }],
     pibot: [{
         name: 'Raspberry Pi Remote Controlled Robot',
         link: 'https://commercial-in-confidence-app.herokuapp.com/',
@@ -998,6 +1027,7 @@ app.get('/git-hub', (req, res) => res.render('git-hub', context));
 app.get('/contact', (req, res) => res.render('contact', context));
 
 // Project routes
+app.get('/pizza-fanatic', (req, res) => res.render('pizza-fanatic', context));
 app.get('/pibot', (req, res) => res.render('pibot', context));
 app.get('/cic', (req, res) => res.render('cic', context));
 app.get('/gazetteer', (req, res) => res.render('gazetteer', context));
