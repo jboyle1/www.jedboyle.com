@@ -18,6 +18,7 @@ app.use(express.static(path.join(__dirname, 'public/img/chambers')));
 app.use(express.static(path.join(__dirname, 'public/img/language-icons')));
 
 // Image middleware
+app.use(express.static(path.join(__dirname, 'public/img/factory-pattern')));
 app.use(express.static(path.join(__dirname, 'public/img/user-validation')));
 app.use(express.static(path.join(__dirname, 'public/img/pizza-fanatic')));
 app.use(express.static(path.join(__dirname, 'public/img/pibot')));
@@ -77,7 +78,11 @@ app.set('view engine', '.hbs');
 // Portfolio dropdown
 
 const context = {
-    toggleNav: [{
+        toggleNav: [{
+            name: 'PHP Factory Pattern',
+            link: 'factory-pattern',
+            topic: 'PHP/OOP/Design Patterns'
+        },{
             name: 'User validation form',
             link: 'user-validation',
             topic: 'PHP/OOP/HTML'
@@ -343,6 +348,12 @@ const context = {
         info: 'Manufacturing Engineering, Merit'
     }],
     portfolio: [{
+            link: 'factory-pattern',
+            image: 'factory-pattern1.png',
+            alt: 'PHP Design Patterns - Factory Pattern',
+            name: 'PHP Design Patterns - Factory Pattern',
+            // languages: 'MySQL, PHP'
+        },{
             link: 'user-validation',
             image: 'user-validation1.png',
             alt: 'User Validation Form',
@@ -590,6 +601,20 @@ const context = {
             languages: 'HTML, CSS'
         }
     ],
+    factoryPattern: [{
+        name: 'PHP Design Patterns - Factory Pattern',
+        link: 'https://php-design-patterns-001-factor.herokuapp.com/',
+        alt: 'https://php-design-patterns-001-factor.herokuapp.com/',
+        img1: 'factory-pattern1.png',
+        img2: 'factory-pattern2.png',
+        img3: 'factory-pattern3.png',
+        iconImg1: 'XAMPP.png',
+        iconImg2: 'html-5.png',
+        iconImg3: 'css.png',
+        iconImg4: 'php.png',
+        iconImg5: 'heroku.png',
+        gitHub: 'https://github.com/jboyle1/php-design-patterns-001-factory-pattern'
+    }],
     userValidation: [{
         name: 'User Validation Form',
         link: 'https://user-validation-form.herokuapp.com/',
@@ -1052,6 +1077,7 @@ app.get('/git-hub', (req, res) => res.render('git-hub', context));
 app.get('/contact', (req, res) => res.render('contact', context));
 
 // Project routes
+app.get('/factory-pattern', (req, res) => res.render('factory-pattern', context));
 app.get('/user-validation', (req, res) => res.render('user-validation', context));
 app.get('/pizza-fanatic', (req, res) => res.render('pizza-fanatic', context));
 app.get('/pibot', (req, res) => res.render('pibot', context));
