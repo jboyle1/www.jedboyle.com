@@ -18,6 +18,7 @@ app.use(express.static(path.join(__dirname, 'public/img/chambers')));
 app.use(express.static(path.join(__dirname, 'public/img/language-icons')));
 
 // Image middleware
+app.use(express.static(path.join(__dirname, 'public/img/user-validation')));
 app.use(express.static(path.join(__dirname, 'public/img/pizza-fanatic')));
 app.use(express.static(path.join(__dirname, 'public/img/pibot')));
 app.use(express.static(path.join(__dirname, 'public/img/gazetteer')));
@@ -77,6 +78,10 @@ app.set('view engine', '.hbs');
 
 const context = {
     toggleNav: [{
+            name: 'User validation form',
+            link: 'user-validation',
+            topic: 'PHP/OOP/HTML'
+        },{
             name: 'Pizza Fanatic App',
             link: 'pizza-fanatic',
             topic: 'PHP/MySQL'
@@ -338,6 +343,12 @@ const context = {
         info: 'Manufacturing Engineering, Merit'
     }],
     portfolio: [{
+            link: 'user-validation',
+            image: 'user-validation1.png',
+            alt: 'User Validation Form',
+            name: 'User Validation Form',
+            // languages: 'MySQL, PHP'
+        },{
             link: 'pizza-fanatic',
             image: 'pizza-fanatic1.png',
             alt: 'Pizza Order App ',
@@ -579,6 +590,20 @@ const context = {
             languages: 'HTML, CSS'
         }
     ],
+    userValidation: [{
+        name: 'User Validation Form',
+        link: 'https://user-validation-form.herokuapp.com/',
+        alt: 'https://user-validation-form.herokuapp.com/',
+        img1: 'user-validation1.png',
+        img2: 'user-validation2.png',
+        img3: 'user-validation3.png',
+        iconImg1: 'XAMPP.png',
+        iconImg2: 'html-5.png',
+        iconImg3: 'css.png',
+        iconImg4: 'php.png',
+        iconImg5: 'heroku.png',
+        gitHub: 'https://github.com/jboyle1/user-validation-form'
+    }],
     pizzaFanatic: [{
         name: 'Pizza Fanatic - Pizza Order App',
         link: 'https://pizza-fanatic-app.herokuapp.com/',
@@ -1027,6 +1052,7 @@ app.get('/git-hub', (req, res) => res.render('git-hub', context));
 app.get('/contact', (req, res) => res.render('contact', context));
 
 // Project routes
+app.get('/user-validation', (req, res) => res.render('user-validation', context));
 app.get('/pizza-fanatic', (req, res) => res.render('pizza-fanatic', context));
 app.get('/pibot', (req, res) => res.render('pibot', context));
 app.get('/cic', (req, res) => res.render('cic', context));
