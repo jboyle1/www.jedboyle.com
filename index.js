@@ -259,6 +259,14 @@ const context = {
         }
     ],
     workHistory: [{
+        dates: '02/2021 - Present',
+        link: 'http://www.enable.ltd.uk/',
+        image: 'enable.png',
+        alt: 'Employment Administration Services',
+        name: 'Enable Ltd',
+        inst: 'Web developer',
+        info: 'Employment Administration Services'
+    },{
         dates: '01/2020 - 01/2021',
         link: 'https://itcareerswitch.co.uk/coding-traineeship/',
         image: 'itcs2.png',
